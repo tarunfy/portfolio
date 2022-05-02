@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import LocomotiveScroll from "locomotive-scroll";
-import "locomotive-scroll/dist/locomotive-scroll.css";
 
 export const useLocoScroll = () => {
   useEffect(() => {
