@@ -43,6 +43,21 @@
     font-family: 'Glimer-Light', sans-serif;
     font-weight: 500;
   }
+  #about-me{
+    font-family: 'Glimer-Light', sans-serif;
+    font-weight: 300;
+  }
+  #email{
+    font-family: 'Glimer-Bold', sans-serif;
+    font-weight: 600;
+  }
+
+}
+
+#spline-canvas{
+  height: 800px !important;
+  width: 1000px !important;
+  z-index: -1;
 }
 
 .css-ja5taz-MuiTooltip-tooltip{
