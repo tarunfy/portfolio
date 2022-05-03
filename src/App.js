@@ -5,6 +5,7 @@ import { useLocoScroll } from "./hooks/useLocoScroll";
 
 function App() {
   useLocoScroll();
+
   return (
     <div id="main-container" data-scroll-container>
       <Hero />

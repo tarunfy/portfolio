@@ -4,6 +4,8 @@ import Tooltip from "@mui/material/Tooltip";
 import { Fade } from "@mui/material";
 import Spline from "@splinetool/react-spline";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import { motion } from "framer-motion";
+import AnimatedLetters from "../AnimatedLetters";
 
 const phrases = [
   "Hey, click me",
@@ -19,6 +21,17 @@ const phrases = [
   "checkout the website now ffs!",
 ];
 
+const letters = [
+  "I'm",
+  "developing",
+  "Creative",
+  "&",
+  "Interactive",
+  "webapps",
+];
+
+const title = ["Hello!", "I'm", "Tarun"];
+
 const Hero = () => {
   const [index, setIndex] = useState(0);
 
@@ -33,9 +46,17 @@ const Hero = () => {
   };
 
   return (
-    <section data-scroll-section className=" w-full bg-[#420fe7] px-44 py-36">
-      <div className="hero-container flex flex-col justify-start space-y-4">
-        <div className="flex justify-between items-center">
+    <section data-scroll-section className=" w-full bg-[#420fe7] px-44 py-32">
+      <div className="hero-container flex flex-col justify-start space-y-2">
+        <motion.div
+          animate={{ opacity: 1 }}
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          data-scroll
+          data-scroll-delay="0.5"
+          data-scroll-speed="1"
+          className="flex justify-between items-center"
+        >
           <div className="w-fit">
             <Tooltip
               title={phrases[index]}
@@ -60,39 +81,44 @@ const Hero = () => {
               Available for work
             </p>
           </div>
-        </div>
+        </motion.div>
 
         <div className="z-10">
-          <h1 className="text-white text-[7.5rem]" id="hero-title">
-            Hello! I'm Tarun
+          <h1
+            data-scroll
+            data-scroll-delay="0.5"
+            data-scroll-speed="1"
+            className="text-white text-[7.5rem]"
+            id="hero-title"
+          >
+            <AnimatedLetters letters={title} />
           </h1>
           <h2
+            data-scroll
+            data-scroll-delay="0.5"
+            data-scroll-speed="1"
             className="text-white text-[5.4rem] tracking-normal  leading-[120px]"
             id="sub-hero-title"
           >
-            I'm developing{" "}
-            <span className="italic inline-block hover:translate-y-2 hover:-skew-y-6 transition-all duration-150 ease-linear">
-              Creative
-            </span>{" "}
-            &{" "}
-            <span className="italic inline-block hover:-translate-y-2 hover:skew-y-6 transition-all duration-150 ease-linear">
-              Interactive
-            </span>{" "}
-            webapps
+            <AnimatedLetters letters={letters} />
           </h2>
         </div>
 
         <div className="relative !mt-10 pl-28 pt-6">
-          <div className="w-[50%]">
+          <div
+            data-scroll
+            data-scroll-delay="0.5"
+            data-scroll-speed="1"
+            className="w-[50%]"
+          >
             <p
               className="max-w-lg text-white/50 text-lg leading-7"
               id="about-me"
             >
-              Tarun Sharma is a 19 year old who gives efforts && time to develop
-              webapps and turn ideas into a functional and delightful
-              experience. He is focusing on working on backend stuff and
-              imporving his frontend skills - mainly builds webapps & websites
-              with clean UI.
+              Tarun Sharma is a 19 year old who develop webapps and turn ideas
+              into a functional and delightful experience. He is focusing on
+              working on backend stuff and imporving his frontend skills -
+              mainly builds webapps & websites with clean UI.
             </p>
             <Tooltip
               title={isCopied ? "Copied" : "Copy email"}
@@ -119,11 +145,17 @@ const Hero = () => {
             </Tooltip>
           </div>
 
-          <Spline
-            className="absolute -top-64 -right-[25rem]"
-            id="spline-canvas"
-            scene="https://prod.spline.design/2OUo58AzMHWE8Ru7/scene.spline"
-          />
+          <div
+            data-scroll
+            data-scroll-delay="0.18"
+            data-scroll-speed="1"
+            className="absolute z-0 -top-64 -right-[30rem]"
+          >
+            <Spline
+              id="spline-canvas"
+              scene="https://prod.spline.design/2OUo58AzMHWE8Ru7/scene.spline"
+            />
+          </div>
         </div>
       </div>
     </section>

@@ -49,26 +49,26 @@ const Projects = () => {
           T
         </span>
       </span>
-      <div class="transform rotate-6 skew-x-12">
+      <div className="transform rotate-6 skew-x-12">
         <div
           data-scroll
           data-scroll-direction="horizontal"
           data-scroll-speed="20"
           data-scroll-target="#projects"
         >
-          <span class="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">
+          <span className="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">
             Social Media — Email Marketing — Digital Advertising
           </span>
         </div>
       </div>
-      <div class="transform -rotate-6 -skew-x-12 mt-40">
+      <div className="transform -rotate-6 -skew-x-12 mt-40">
         <div
           data-scroll
           data-scroll-direction="horizontal"
           data-scroll-speed="-20"
           data-scroll-target="#projects"
         >
-          <span class="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">
+          <span className="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">
             Web Development - Motion Design - Graphic Design
           </span>
         </div>
