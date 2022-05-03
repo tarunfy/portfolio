@@ -7,7 +7,7 @@ const Projects = () => {
       data-scroll-section
       id="projects"
     >
-      <span class="lerp-wrap" data-scroll id="hero-title" className="text-8xl">
+      {/* <span class="lerp-wrap" data-scroll id="hero-title" className="text-8xl">
         <span
           data-scroll
           data-scroll-delay="0.18"
@@ -72,7 +72,7 @@ const Projects = () => {
             Web Development - Motion Design - Graphic Design
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -27,8 +27,9 @@ const letterAnimation = {
 const AnimatedLetters = ({ letters }) => {
   return (
     <motion.span variants={banner} initial="initial" animate="animate">
-      {letters.map((letter) => (
+      {letters.map((letter, index) => (
         <motion.span
+          key={index}
           data-scroll
           data-scroll-delay="0.5"
           data-scroll-speed="1"

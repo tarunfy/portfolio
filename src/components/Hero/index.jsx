@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import profilePhoto from "../../assets/images/tarun.jpeg";
 import Tooltip from "@mui/material/Tooltip";
 import { Fade } from "@mui/material";
-import Spline from "@splinetool/react-spline";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import { motion } from "framer-motion";
 import AnimatedLetters from "../AnimatedLetters";
@@ -110,16 +109,16 @@ const Hero = () => {
             </h2>
           </div>
 
-          <div className="relative pl-28 pt-6">
-            <motion.div
-              animate={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              data-scroll
-              data-scroll-delay="0.5"
-              data-scroll-speed="1"
-              className="w-[50%]"
-            >
+          <motion.div
+            className="mt-5"
+            animate={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            data-scroll
+            data-scroll-delay="0.5"
+            data-scroll-speed="1"
+          >
+            <div className="w-fit">
               <p
                 className="max-w-lg text-white/50 text-lg leading-7"
                 id="about-me"
@@ -150,23 +149,8 @@ const Hero = () => {
                   </div>
                 </div>
               </Tooltip>
-            </motion.div>
-
-            <motion.div
-              animate={{ opacity: 1 }}
-              initial={{ opacity: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              data-scroll
-              data-scroll-delay="0.18"
-              data-scroll-speed="1"
-              className="absolute z-0 -top-44 -right-[30rem]"
-            >
-              <Spline
-                id="spline-canvas"
-                scene="https://prod.spline.design/2OUo58AzMHWE8Ru7/scene.spline"
-              />
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
