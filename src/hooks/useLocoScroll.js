@@ -10,6 +10,8 @@ export const useLocoScroll = () => {
       smooth: true,
       multiplier: 1,
       class: "reveal",
+      tablet: { smooth: true },
+      smartphone: { smooth: true },
     });
   }, []);
 };
