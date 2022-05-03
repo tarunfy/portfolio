@@ -5,6 +5,7 @@ import { Fade } from "@mui/material";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import { motion } from "framer-motion";
 import AnimatedLetters from "../AnimatedLetters";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const phrases = [
   "Hey, click me",
@@ -110,7 +111,7 @@ const Hero = () => {
           </div>
 
           <motion.div
-            className="mt-5"
+            className="mt-5 w-full flex justify-between items-center"
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -118,37 +119,46 @@ const Hero = () => {
             data-scroll-delay="0.5"
             data-scroll-speed="1"
           >
-            <div className="w-fit">
-              <p
-                className="max-w-lg text-white/50 text-lg leading-7"
-                id="about-me"
-              >
-                Tarun Sharma is a 19 year old who develop webapps and turn ideas
-                into a functional and delightful experience. He is focusing on
-                working on backend stuff and imporving his frontend skills -
-                mainly builds webapps & websites with clean UI.
-              </p>
-
-              <Tooltip
-                title={isCopied ? "Copied" : "Copy email"}
-                TransitionComponent={Fade}
-                TransitionProps={{ timeout: 300 }}
-                arrow
-              >
-                <div
-                  onClick={handleCopyText}
-                  className="flex items-center cursor-pointer w-full mt-5 border-[1px] border-white/20"
+            <div className="w-full flex justify-between items-center">
+              <div>
+                <p
+                  className="max-w-lg text-white/50 text-lg leading-7"
+                  id="about-me"
                 >
-                  <div className="p-6">
-                    <MailOutlineIcon className="text-white/90" />
+                  Tarun Sharma is a 19 year old who develop webapps and turn
+                  ideas into a functional and delightful experience. He is
+                  focusing on working on backend stuff and imporving his
+                  frontend skills - mainly builds webapps & websites with clean
+                  UI.
+                </p>
+
+                <Tooltip
+                  title={isCopied ? "Copied" : "Copy email"}
+                  TransitionComponent={Fade}
+                  TransitionProps={{ timeout: 300 }}
+                  arrow
+                >
+                  <div
+                    onClick={handleCopyText}
+                    className="flex items-center cursor-pointer w-full mt-5 border-[1px] border-white/20"
+                  >
+                    <div className="p-6">
+                      <MailOutlineIcon className="text-white/90" />
+                    </div>
+                    <div className="p-6 border-l-[1px] border-white/20 w-full">
+                      <p className="text-white/90 text-lg w-full" id="email">
+                        tarunsharma8920@gmail.com
+                      </p>
+                    </div>
                   </div>
-                  <div className="p-6 border-l-[1px] border-white/20 w-full">
-                    <p className="text-white/90 text-lg w-full" id="email">
-                      tarunsharma8920@gmail.com
-                    </p>
-                  </div>
-                </div>
-              </Tooltip>
+                </Tooltip>
+              </div>
+              <Player
+                autoplay
+                loop
+                src="https://assets6.lottiefiles.com/packages/lf20_m64r7cwa.json"
+                style={{ height: "400px", width: "600px" }}
+              />
             </div>
           </motion.div>
         </div>
