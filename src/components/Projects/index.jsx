@@ -3,7 +3,7 @@ import React from "react";
 const Projects = () => {
   return (
     <div
-      className="h-screen w-full py-44 text-center"
+      className="h-screen w-full py-44 text-center bg-[#420fe7]"
       data-scroll-section
       id="projects"
     >

@@ -32,7 +32,7 @@ const AnimatedLetters = ({ letters }) => {
           data-scroll
           data-scroll-delay="0.5"
           data-scroll-speed="1"
-          className="inline-block"
+          className="inline-block z-40"
           variants={letterAnimation}
         >
           {letter}&nbsp;

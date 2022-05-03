@@ -45,9 +45,14 @@ const Hero = () => {
     }
   };
 
+  const handleCopyText = () => {
+    navigator.clipboard.writeText("tarunsharma8920@gmail.com");
+    setIsCopied(true);
+  };
+
   return (
-    <section data-scroll-section className=" w-full bg-[#420fe7] px-44 py-32">
-      <div className="hero-container flex flex-col justify-start space-y-2">
+    <section data-scroll-section className=" w-full bg-[#420fe7] px-44 py-36">
+      <div className="hero-container flex flex-col justify-start">
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -55,7 +60,7 @@ const Hero = () => {
           data-scroll
           data-scroll-delay="0.5"
           data-scroll-speed="1"
-          className="flex justify-between items-center"
+          className="flex justify-between items-center mb-10"
         >
           <div className="w-fit">
             <Tooltip
@@ -83,78 +88,84 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        <div className="z-10">
-          <h1
-            data-scroll
-            data-scroll-delay="0.5"
-            data-scroll-speed="1"
-            className="text-white text-[7.5rem]"
-            id="hero-title"
-          >
-            <AnimatedLetters letters={title} />
-          </h1>
-          <h2
-            data-scroll
-            data-scroll-delay="0.5"
-            data-scroll-speed="1"
-            className="text-white text-[5.4rem] tracking-normal  leading-[120px]"
-            id="sub-hero-title"
-          >
-            <AnimatedLetters letters={letters} />
-          </h2>
-        </div>
-
-        <div className="relative !mt-10 pl-28 pt-6">
-          <div
-            data-scroll
-            data-scroll-delay="0.5"
-            data-scroll-speed="1"
-            className="w-[50%]"
-          >
-            <p
-              className="max-w-lg text-white/50 text-lg leading-7"
-              id="about-me"
+        <div>
+          <div>
+            <h1
+              data-scroll
+              data-scroll-delay="0.5"
+              data-scroll-speed="1"
+              className="text-white text-[6.5rem] tracking-normal leading-[120px]"
+              id="hero-title"
             >
-              Tarun Sharma is a 19 year old who develop webapps and turn ideas
-              into a functional and delightful experience. He is focusing on
-              working on backend stuff and imporving his frontend skills -
-              mainly builds webapps & websites with clean UI.
-            </p>
-            <Tooltip
-              title={isCopied ? "Copied" : "Copy email"}
-              TransitionComponent={Fade}
-              TransitionProps={{ timeout: 300 }}
-              arrow
+              <AnimatedLetters letters={title} />
+            </h1>
+            <h2
+              data-scroll
+              data-scroll-delay="0.5"
+              data-scroll-speed="1"
+              className="text-white z-20 text-[5.5rem] tracking-normal leading-[120px]"
+              id="sub-hero-title"
             >
-              <div
-                onClick={() => {
-                  navigator.clipboard.writeText("tarunsharma8920@gmail.com");
-                  setIsCopied(true);
-                }}
-                className="flex items-center cursor-pointer w-full mt-5 border-[1px] border-white/20"
-              >
-                <div className="p-6">
-                  <MailOutlineIcon className="text-white/90" />
-                </div>
-                <div className="p-6 border-l-[1px] border-white/20 w-full">
-                  <p className="text-white/90 text-lg w-full" id="email">
-                    tarunsharma8920@gmail.com
-                  </p>
-                </div>
-              </div>
-            </Tooltip>
+              <AnimatedLetters letters={letters} />
+            </h2>
           </div>
 
-          <div
-            data-scroll
-            data-scroll-delay="0.18"
-            data-scroll-speed="1"
-            className="absolute z-0 -top-64 -right-[30rem]"
-          >
-            <Spline
-              id="spline-canvas"
-              scene="https://prod.spline.design/2OUo58AzMHWE8Ru7/scene.spline"
-            />
+          <div className="relative pl-28 pt-6">
+            <motion.div
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              data-scroll
+              data-scroll-delay="0.5"
+              data-scroll-speed="1"
+              className="w-[50%]"
+            >
+              <p
+                className="max-w-lg text-white/50 text-lg leading-7"
+                id="about-me"
+              >
+                Tarun Sharma is a 19 year old who develop webapps and turn ideas
+                into a functional and delightful experience. He is focusing on
+                working on backend stuff and imporving his frontend skills -
+                mainly builds webapps & websites with clean UI.
+              </p>
+
+              <Tooltip
+                title={isCopied ? "Copied" : "Copy email"}
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 300 }}
+                arrow
+              >
+                <div
+                  onClick={handleCopyText}
+                  className="flex items-center cursor-pointer w-full mt-5 border-[1px] border-white/20"
+                >
+                  <div className="p-6">
+                    <MailOutlineIcon className="text-white/90" />
+                  </div>
+                  <div className="p-6 border-l-[1px] border-white/20 w-full">
+                    <p className="text-white/90 text-lg w-full" id="email">
+                      tarunsharma8920@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </Tooltip>
+            </motion.div>
+
+            <motion.div
+              animate={{ opacity: 1 }}
+              initial={{ opacity: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              data-scroll
+              data-scroll-delay="0.18"
+              data-scroll-speed="1"
+              className="absolute z-0 -top-44 -right-[30rem]"
+            >
+              <Spline
+                id="spline-canvas"
+                scene="https://prod.spline.design/2OUo58AzMHWE8Ru7/scene.spline"
+              />
+            </motion.div>
           </div>
         </div>
       </div>
