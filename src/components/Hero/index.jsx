@@ -166,7 +166,7 @@ const Hero = () => {
                 autoplay
                 loop
                 src="https://assets6.lottiefiles.com/packages/lf20_m64r7cwa.json"
-                className="xl:!h-[400px] xl:!w-[600px] lg:!h-[280px] lg:!w-[480px] md:!h-[220px] md:!w-[300px] vvs:!h-[180px] vvs:!w-[260px] h-[160px] w-[240px] !mt-4 sm:!mt-0"
+                className="xl:!h-[400px] xl:!w-[600px] lg:!h-[280px] lg:!w-[480px] md:!h-[220px] md:!w-[300px] !h-[260px] !w-[360px]"
               />
             </div>
           </motion.div>
