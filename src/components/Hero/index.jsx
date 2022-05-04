@@ -51,7 +51,10 @@ const Hero = () => {
   };
 
   return (
-    <section data-scroll-section className=" w-full bg-[#420fe7] px-44 py-36">
+    <section
+      data-scroll-section
+      className="w-full bg-[#420fe7] xl:px-44 lg:px-40 sm:py-36 py-32 md:px-32 sm:px-28 px-16"
+    >
       <div className="hero-container flex flex-col justify-start">
         <motion.div
           animate={{ opacity: 1 }}
@@ -60,7 +63,7 @@ const Hero = () => {
           data-scroll
           data-scroll-delay="0.5"
           data-scroll-speed="1"
-          className="flex justify-between items-center mb-10"
+          className="flex justify-between items-center xl:mb-10 lg:mb-8 md:mb-6 sm:mb-5 mb-4"
         >
           <div className="w-fit">
             <Tooltip
@@ -74,15 +77,18 @@ const Hero = () => {
                   src={profilePhoto}
                   alt="Tarun Sharma"
                   onClick={handlePhrases}
-                  className="rounded-full h-20 w-20 hover:scale-[1.05] hover:shadow-custom1 hover:-rotate-12 transition-all duration-300 ease-in-out cursor-pointer"
+                  className="rounded-full lg:h-20 lg:w-20 md:h-16 md:w-16  h-14 w-14 hover:scale-[1.05] hover:shadow-custom1 hover:-rotate-12 transition-all duration-300 ease-in-out cursor-pointer"
                 />
               </div>
             </Tooltip>
           </div>
 
           <div className="flex justify-between items-center space-x-2">
-            <div className="h-[1px] w-10 bg-white"></div>
-            <p className="text-white capitalize" id="work-status">
+            <div className="h-[1px] md:w-10 sm:w-7 w-5 bg-white"></div>
+            <p
+              className="text-white capitalize sm:text-sm md:text-base xl:text-lg text-xs"
+              id="work-status"
+            >
               Available for work
             </p>
           </div>
@@ -94,7 +100,7 @@ const Hero = () => {
               data-scroll
               data-scroll-delay="0.5"
               data-scroll-speed="1"
-              className="text-white text-[6.5rem] tracking-normal leading-[120px]"
+              className="text-white 2xl:text-[6.5rem] xl:text-[6.2rem] lg:text-[5rem] md:text-[3.5rem] sm:text-[3rem] text-[2rem] tracking-normal xl:leading-[120px] md:leading-[80px] lg:leading-[100px] sm:leading-[80px] leading-[60px]"
               id="hero-title"
             >
               <AnimatedLetters letters={title} />
@@ -103,7 +109,7 @@ const Hero = () => {
               data-scroll
               data-scroll-delay="0.5"
               data-scroll-speed="1"
-              className="text-white z-20 text-[5.5rem] tracking-normal leading-[120px]"
+              className="text-white z-20 2xl:text-[5.5rem] xl:text-[5rem] lg:text-[3.5rem] md:text-[2.6rem] sm:text-[2.2rem] text-[1.5rem] tracking-normal xl:leading-[120px] lg:leading-[100px] md:leading-[70px] sm:leading-[50px] leading-[40px]"
               id="sub-hero-title"
             >
               <AnimatedLetters letters={letters} />
@@ -111,7 +117,7 @@ const Hero = () => {
           </div>
 
           <motion.div
-            className="mt-5 w-full flex justify-between items-center"
+            className="xl:mt-5 mt-3 w-full flex justify-between items-center"
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -119,10 +125,10 @@ const Hero = () => {
             data-scroll-delay="0.5"
             data-scroll-speed="1"
           >
-            <div className="w-full flex justify-between items-center">
+            <div className="w-full flex sm:flex-row flex-col justify-between items-center">
               <div>
                 <p
-                  className="max-w-lg text-white/50 text-lg leading-7"
+                  className="lg:max-w-lg md:max-w-md sm:max-w-sm max-w-none text-white/50 xl:text-lg lg:text-base md:text-sm  text-xs xl:leading-7 lg:leading-6 leading-5"
                   id="about-me"
                 >
                   Tarun Sharma is a 19 year old who develop webapps and turn
@@ -140,13 +146,16 @@ const Hero = () => {
                 >
                   <div
                     onClick={handleCopyText}
-                    className="flex items-center cursor-pointer w-full mt-5 border-[1px] border-white/20"
+                    className="flex items-center cursor-pointer w-full xl:mt-5 lg:mt-3 mt-3 border-[1px] border-white/20"
                   >
-                    <div className="p-6">
-                      <MailOutlineIcon className="text-white/90" />
+                    <div className="xl:p-6 lg:p-5 p-4">
+                      <MailOutlineIcon className="text-white/90 !h-5 !w-5 lg:!h-6 lg:!w-6" />
                     </div>
-                    <div className="p-6 border-l-[1px] border-white/20 w-full">
-                      <p className="text-white/90 text-lg w-full" id="email">
+                    <div className="xl:p-6 lg:p-5 p-4 border-l-[1px] border-white/20 w-full">
+                      <p
+                        className="text-white/90 xl:text-lg lg:text-base md:text-sm text-xs w-full"
+                        id="email"
+                      >
                         tarunsharma8920@gmail.com
                       </p>
                     </div>
@@ -157,7 +166,7 @@ const Hero = () => {
                 autoplay
                 loop
                 src="https://assets6.lottiefiles.com/packages/lf20_m64r7cwa.json"
-                style={{ height: "400px", width: "600px" }}
+                className="xl:!h-[400px] xl:!w-[600px] lg:!h-[280px] lg:!w-[480px] md:!h-[220px] md:!w-[300px] h-[180px] w-[260px]"
               />
             </div>
           </motion.div>
