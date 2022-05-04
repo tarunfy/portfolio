@@ -6,6 +6,7 @@ const CustomCursor = () => {
     const bigBall = document.querySelector(".cursor__ball--big");
     const hoverables = document.querySelectorAll(".hoverable");
     const path = document.querySelector("path");
+
     // Listeners
     document.body.addEventListener("mousemove", onMouseMove);
     for (let i = 0; i < hoverables.length; i++) {
