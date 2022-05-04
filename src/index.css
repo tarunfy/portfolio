@@ -4,7 +4,7 @@
 
 
 @font-face {
-  font-family: "Glimer-outlined";
+  font-family: "Glimer-Outlined";
   src: url(./assets/Gilmer-Font/Gilmer\ Outline.otf);
 };
 @font-face {
@@ -30,51 +30,59 @@
 
 
 
-@layer components {
-  #hero-title{
-    font-family: 'Glimer-Outlined', sans-serif;
-    font-weight: 100;
-  }
-  #sub-hero-title{
-    font-family: 'Glimer-Heavy', sans-serif;
-    font-weight: 800;
-  }
-  #work-status{
-    font-family: 'Glimer-Light', sans-serif;
-    font-weight: 500;
-  }
-  #about-me{
-    font-family: 'Glimer-Light', sans-serif;
-    font-weight: 300;
-  }
-  #email{
-    font-family: 'Glimer-Bold', sans-serif;
-    font-weight: 600;
-  }
+@layer base{
+
+#hero-title{
+  font-family: 'Glimer-Outlined', sans-serif;
+  font-weight: 100;
+}
+#sub-hero-title{
+  font-family: 'Glimer-Heavy', sans-serif;
+  font-weight: 800;
+}
+#work-status{
+  font-family: 'Glimer-Light', sans-serif;
+  font-weight: 500;
+}
+#about-me{
+  font-family: 'Glimer-Light', sans-serif;
+  font-weight: 300;
+}
+#email{
+  font-family: 'Glimer-Bold', sans-serif;
+  font-weight: 600;
+}
+
+.cursor {
+  pointer-events: none;      
+} 
+
+.cursor__ball {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
 
 }
 
-#spline-canvas{
-  height: 800px !important;
-  width: 1200px !important;
-  z-index: -1;
-}
 
 .css-ja5taz-MuiTooltip-tooltip{
-    background-color: #222 !important;
-    color: white !important;
-  border-radius: 50px !important;
-  padding: 1rem !important;
-  font-size: 0.8rem !important;
-  font-family: 'Glimer-Regular', sans-serif !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #222 !important;
+  color: white !important;
+border-radius: 50px !important;
+padding: 1rem !important;
+font-size: 0.8rem !important;
+font-family: 'Glimer-Regular', sans-serif !important;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 } 
 
 .MuiTooltip-popper[data-popper-placement*="right"] .css-ja5taz-MuiTooltip-tooltip{
-  transform: translateY(-20px) !important;
+transform: translateY(-20px) !important;
 }
-
 
 html.has-scroll-smooth {
     overflow: hidden; }

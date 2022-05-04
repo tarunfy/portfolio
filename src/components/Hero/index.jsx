@@ -146,7 +146,7 @@ const Hero = () => {
                 >
                   <div
                     onClick={handleCopyText}
-                    className="flex items-center cursor-pointer w-full xl:mt-5 mt-3 border-[1px] border-white/20"
+                    className="hoverable flex items-center w-full xl:mt-5 mt-3 border-[1px] border-white/20"
                   >
                     <div className="xl:p-6 lg:p-5 vvs:p-4 p-3">
                       <MailOutlineIcon className="text-white/90 vvs:!h-5 vvs:!w-5 !h-4 !w-4 lg:!h-6 lg:!w-6" />

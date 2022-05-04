@@ -1,4 +1,5 @@
 import Contact from "./components/Contact";
+import CustomCursor from "./components/CustomCursor";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import { useLocoScroll } from "./hooks/useLocoScroll";
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div id="main-container" data-scroll-container>
+      <CustomCursor />
       <Hero />
       <Projects />
       <Contact />
