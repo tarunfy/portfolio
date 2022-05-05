@@ -4,15 +4,18 @@ import gsap from "gsap";
 const CustomCursor = () => {
   useEffect(() => {
     const bigBall = document.querySelector(".cursor__ball--big");
-    const hoverables = document.querySelectorAll(".hoverable");
-    const path = document.querySelector("path");
+    const socialIcons = document.querySelectorAll(".social");
+    const profilePhoto = document.getElementById("profilePhoto");
 
     // Listeners
     document.body.addEventListener("mousemove", onMouseMove);
-    for (let i = 0; i < hoverables.length; i++) {
-      hoverables[i].addEventListener("mouseenter", onMouseHover);
-      hoverables[i].addEventListener("mouseleave", onMouseHoverOut);
+    for (let i = 0; i < socialIcons.length; i++) {
+      socialIcons[i].addEventListener("mouseenter", onMouseHover);
+      socialIcons[i].addEventListener("mouseleave", onMouseHoverOut);
     }
+
+    profilePhoto.addEventListener("mouseenter", profileMouseHover);
+    profilePhoto.addEventListener("mouseleave", onMouseHoverOut);
 
     // Move the cursor
     function onMouseMove(e) {
@@ -23,28 +26,46 @@ const CustomCursor = () => {
       });
     }
 
+    // Hover profile photo:
+    function profileMouseHover() {
+      bigBall.style.display = "none";
+    }
+
     // Hover an element
-    function onMouseHover() {
-      document.body.style.cursor = "none";
-      bigBall.style.fill = "black";
-      bigBall.style.opacity = 0.5;
-      path.style.strokeWidth = 0;
+    function onMouseHover(e) {
+      bigBall.style.display = "none";
       gsap.to(bigBall, {
         duration: 0.3,
-        scale: 1.6,
+        opacity: 0,
         ease: "Power2.easeInOut",
       });
+      gsap.to(e.target.querySelector(".icon-wrapper"), {
+        duration: 0.3,
+        scale: 1.2,
+        ease: "Power3.easeInOut",
+      });
+      gsap.to(e.target.querySelector("img"), {
+        duration: 0.3,
+        scale: 0.8,
+        ease: "Power3.easeInOut",
+      });
     }
-    function onMouseHoverOut() {
-      document.body.style.cursor = "default";
-      path.style.strokeWidth = 1.1;
-      bigBall.style.fill = "none";
-      bigBall.style.opacity = 1;
-
+    function onMouseHoverOut(e) {
+      bigBall.style.display = "block";
       gsap.to(bigBall, {
         duration: 0.3,
-        scale: 1,
+        opacity: 1,
         ease: "Power2.easeInOut",
+      });
+      gsap.to(e.target.querySelector(".icon-wrapper"), {
+        duration: 0.3,
+        scale: 1,
+        ease: "Power3.easeInOut",
+      });
+      gsap.to(e.target.querySelector("img"), {
+        duration: 0.3,
+        scale: 1,
+        ease: "Power3.easeInOut",
       });
     }
   }, []);
