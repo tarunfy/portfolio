@@ -15,7 +15,7 @@ const FloatingIcons = () => {
           data-scroll
           data-scroll-delay="1"
           data-scroll-speed="4"
-          className="icon-wrapper rounded-full  absolute top-[60%] left-[3%] h-[5.8rem] w-[5.8rem] bg-[#ffffff]/70 flex justify-center items-center"
+          className="icon-wrapper rounded-full  absolute top-[55%] left-[3%] h-[5.8rem] w-[5.8rem] bg-[#ffffff]/70 flex justify-center items-center"
         >
           <span className="icon-container rounded-full  h-[4.9rem] w-[4.9rem] bg-[#ffffff]/90 flex justify-center items-center">
             <img src={gmail} alt="gmail" className="h-8 w-8" />
@@ -30,7 +30,7 @@ const FloatingIcons = () => {
           data-scroll
           data-scroll-delay="1"
           data-scroll-speed="4"
-          className="icon-wrapper rounded-full absolute top-[14%] left-[55%] h-[5.8rem] w-[5.8rem] bg-[#ffffff]/70 flex justify-center items-center"
+          className="icon-wrapper rounded-full absolute top-[13%] left-[53%] h-[5.8rem] w-[5.8rem] bg-[#ffffff]/70 flex justify-center items-center"
         >
           <span className="icon-container rounded-full  h-[4.9rem] w-[4.9rem] bg-[#ffffff]/90 flex justify-center items-center">
             <img src={github} alt="github" className="h-10 w-10" />
@@ -49,7 +49,7 @@ const FloatingIcons = () => {
           data-scroll
           data-scroll-delay="1"
           data-scroll-speed="4"
-          className="icon-wrapper rounded-full absolute top-[43%] right-[5%] h-[5.8rem] w-[5.8rem] bg-[#ffffff]/70 flex justify-center items-center"
+          className="icon-wrapper rounded-full absolute top-[40%] right-[5%] h-[5.8rem] w-[5.8rem] bg-[#ffffff]/70 flex justify-center items-center"
         >
           <span className="icon-container rounded-full  h-[4.9rem] w-[4.9rem] bg-[#ffffff]/90 flex justify-center items-center">
             <img src={linkedin} alt="github" className="h-8 w-8" />

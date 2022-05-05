@@ -46,7 +46,7 @@ const Hero = () => {
   return (
     <section
       data-scroll-section
-      className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:py-36 py-32 md:px-32 sm:px-28 vvs:px-12 px-10"
+      className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:py-48 py-44 md:px-32 sm:px-28 vvs:px-12 px-10"
     >
       <FloatingIcons />
       <div className="hero-container flex flex-col justify-start">
@@ -54,12 +54,14 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          data-scroll
-          data-scroll-delay="0.5"
-          data-scroll-speed="1"
-          className="flex justify-between items-center xl:mb-10 lg:mb-8 md:mb-6 sm:mb-5 vvs:mb-4 mb-3"
+          className="flex justify-between items-center"
         >
-          <div className="w-fit">
+          <div
+            className="w-fit"
+            data-scroll
+            data-scroll-delay="0.5"
+            data-scroll-speed="2"
+          >
             <Tooltip
               title={phrases[index]}
               placement="right-start"
@@ -78,7 +80,12 @@ const Hero = () => {
             </Tooltip>
           </div>
 
-          <div className="flex justify-between items-center space-x-2 ">
+          <div
+            className="flex justify-between items-center space-x-2 "
+            data-scroll
+            data-scroll-delay="0.5"
+            data-scroll-speed="2"
+          >
             <div className="h-[1px] md:w-10 sm:w-7 vvs:w-5 w-4 bg-white"></div>
             <p
               className="text-white hover:text-[#EEA1BE] transition-colors duration-300 ease-in-out capitalize vss:text-sm md:text-base xl:text-lg text-xs"
@@ -90,7 +97,7 @@ const Hero = () => {
         </motion.div>
 
         <div>
-          <div>
+          <div className="mt-10">
             <h1
               data-scroll
               data-scroll-delay="0.5"
@@ -112,17 +119,17 @@ const Hero = () => {
           </div>
 
           <motion.div
-            className="xl:mt-3 w-full flex justify-between items-center"
+            className="xl:-mt-10 w-full flex justify-between items-center"
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            data-scroll
-            data-scroll-delay="0.5"
-            data-scroll-speed="1"
           >
             <div className="w-full flex sm:flex-row flex-col justify-between items-center">
               <div>
                 <p
+                  data-scroll
+                  data-scroll-delay="0.5"
+                  data-scroll-speed="2"
                   className="lg:max-w-lg !z-10 md:max-w-md sm:max-w-sm max-w-none text-white/50 xl:text-lg lg:text-base md:text-sm text-xs xl:leading-7 lg:leading-6 leading-5"
                   id="about-me"
                 >
@@ -133,12 +140,14 @@ const Hero = () => {
                   UI.
                 </p>
               </div>
-              <Player
-                autoplay
-                loop
-                src="https://assets6.lottiefiles.com/packages/lf20_m64r7cwa.json"
-                className="xl:!h-[400px] !z-10 xl:!w-[600px] lg:!h-[280px] lg:!w-[480px] md:!h-[220px] md:!w-[300px] !h-[260px] !w-[360px]"
-              />
+              <div data-scroll data-scroll-delay="0.5" data-scroll-speed="2.5">
+                <Player
+                  autoplay
+                  loop
+                  src="https://assets6.lottiefiles.com/packages/lf20_m64r7cwa.json"
+                  className="xl:!h-[400px] !z-10 xl:!w-[600px] lg:!h-[280px] lg:!w-[480px] md:!h-[220px] md:!w-[300px] !h-[260px] !w-[360px]"
+                />
+              </div>
             </div>
           </motion.div>
         </div>
