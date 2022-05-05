@@ -41,12 +41,12 @@ const CustomCursor = () => {
       });
       gsap.to(e.target.querySelector(".icon-wrapper"), {
         duration: 0.3,
-        scale: 1.2,
+        scale: 1.1,
         ease: "Power3.easeInOut",
       });
       gsap.to(e.target.querySelector("img"), {
         duration: 0.3,
-        scale: 0.8,
+        scale: 0.9,
         ease: "Power3.easeInOut",
       });
     }

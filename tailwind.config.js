@@ -5,6 +5,16 @@ module.exports = {
       boxShadow: {
         custom1: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
       },
+      keyframes: {
+        float: {
+          "0%": { transform: "translate(0,  0px)" },
+          "50% ": { transform: "translate(0, 15px)" },
+          "100%": { transform: "translate(0, -0px)" },
+        },
+      },
+      animation: {
+        float: "float 2s ease-in-out infinite",
+      },
     },
     screens: {
       vvs: "393px",
