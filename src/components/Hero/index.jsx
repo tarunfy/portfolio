@@ -78,10 +78,10 @@ const Hero = () => {
             </Tooltip>
           </div>
 
-          <div className="flex justify-between items-center space-x-2">
+          <div className="flex justify-between items-center space-x-2 ">
             <div className="h-[1px] md:w-10 sm:w-7 vvs:w-5 w-4 bg-white"></div>
             <p
-              className="text-white capitalize vss:text-sm md:text-base xl:text-lg text-xs"
+              className="text-white hover:text-[#EEA1BE] transition-colors duration-300 ease-in-out capitalize vss:text-sm md:text-base xl:text-lg text-xs"
               id="work-status"
             >
               Available for work
