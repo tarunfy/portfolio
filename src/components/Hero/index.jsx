@@ -48,8 +48,7 @@ const Hero = () => {
       data-scroll-section
       className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:py-48 py-44 md:px-32 sm:px-28 vvs:px-12 px-10"
     >
-      <FloatingIcons />
-      <div className="hero-container flex flex-col justify-start">
+      <div className="hero-container flex flex-col ">
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -119,18 +118,18 @@ const Hero = () => {
           </div>
 
           <motion.div
-            className="xl:-mt-10 w-full flex justify-between items-center"
+            className="xl:-mt-10"
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="w-full flex sm:flex-row flex-col justify-between items-center">
+            <div className="w-full flex md:flex-row flex-col justify-between items-center">
               <div>
                 <p
                   data-scroll
                   data-scroll-delay="0.5"
                   data-scroll-speed="2"
-                  className="lg:max-w-lg !z-10 md:max-w-md sm:max-w-sm max-w-none text-white/50 xl:text-lg lg:text-base md:text-sm text-xs xl:leading-7 lg:leading-6 leading-5"
+                  className=" text-white/50 xl:text-lg lg:text-base md:text-sm text-xs xl:leading-7 lg:leading-6 leading-5"
                   id="about-me"
                 >
                   Tarun Sharma is a 19 year old who develop webapps and turn
@@ -140,16 +139,18 @@ const Hero = () => {
                   UI.
                 </p>
               </div>
-              <div data-scroll data-scroll-delay="0.5" data-scroll-speed="2.5">
+
+              <div data-scroll data-scroll-delay="0.5" data-scroll-speed="2">
                 <Player
                   autoplay
                   loop
                   src="https://assets6.lottiefiles.com/packages/lf20_m64r7cwa.json"
-                  className="xl:!h-[400px] !z-10 xl:!w-[600px] lg:!h-[280px] lg:!w-[480px] md:!h-[220px] md:!w-[300px] !h-[260px] !w-[360px]"
+                  className="xl:!h-[400px] !z-10 xl:!w-[600px] lg:!h-[280px] lg:!w-[480px] md:!h-[240px] md:!w-[300px] !h-[180px] !w-[360px]"
                 />
               </div>
             </div>
           </motion.div>
+          <FloatingIcons />
         </div>
       </div>
     </section>
