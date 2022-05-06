@@ -46,7 +46,7 @@ const Hero = () => {
   return (
     <section
       data-scroll-section
-      className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:pt-48 sm:pb-0 py-44 md:px-32 sm:px-28 vvs:px-12 px-10"
+      className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:pt-48 sm:pb-0 pt-40 md:px-32 sm:px-28 vvs:px-12 px-10"
     >
       <div className="hero-container flex flex-col ">
         <motion.div

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const FloatingIcons = () => {
   return (
-    <div className="z-[0] flex justify-between w-full items-center my-4 ">
+    <div className="z-[10] flex justify-between w-full items-center my-14">
       <a href="mailto:tarunsharma8920@gmail.com" className="social">
         <motion.span
           animate={{ opacity: 1, scale: 1 }}
@@ -19,7 +19,7 @@ const FloatingIcons = () => {
           }}
           data-scroll
           data-scroll-delay="0.1"
-          data-scroll-speed="3"
+          data-scroll-speed="2.5"
           className="icon-wrapper rounded-full  sm:absolute sm:top-[55%] sm:left-[3%] 2xl:h-[6rem] 2xl:w-[6rem] xl:h-[5.6rem] xl:w-[5.6rem] lg:h-[5.2rem] lg:w-[5.2rem] md:h-[4.8rem] md:w-[4.8rem] vvs:h-[4.4rem] vvs:w-[4.4rem] h-[3.5rem] w-[3.5rem] bg-[#ffffff]/70 flex justify-center items-center"
         >
           <motion.span
@@ -59,8 +59,8 @@ const FloatingIcons = () => {
           }}
           data-scroll
           data-scroll-delay="0.1"
-          data-scroll-speed="3"
-          className="icon-wrapper rounded-full sm:absolute sm:top-[13%] sm:left-[53%]  2xl:h-[6rem] 2xl:w-[6rem] xl:h-[5.6rem] xl:w-[5.6rem] lg:h-[5.2rem] lg:w-[5.2rem] md:h-[4.8rem] md:w-[4.8rem] vvs:h-[4.4rem] vvs:w-[4.4rem] h-[3.5rem] w-[3.5rem] bg-[#ffffff]/70 flex justify-center items-center"
+          data-scroll-speed="2.5"
+          className="icon-wrapper rounded-full sm:absolute xl:top-[8.2%] xl:left-[50%] lg:top-[9%] sm:top-[13%] sm:left-[45%] md:top-[11%] md:left-[43%] lg:left-[47%] 2xl:h-[6rem] 2xl:w-[6rem] xl:h-[5.6rem] xl:w-[5.6rem] lg:h-[5.2rem] lg:w-[5.2rem] md:h-[4.8rem] md:w-[4.8rem] vvs:h-[4.4rem] vvs:w-[4.4rem] h-[3.5rem] w-[3.5rem] bg-[#ffffff]/70 flex justify-center items-center"
         >
           <motion.span
             animate={{ opacity: 1, scale: 1 }}
@@ -103,7 +103,7 @@ const FloatingIcons = () => {
           }}
           data-scroll
           data-scroll-delay="0.1"
-          data-scroll-speed="3"
+          data-scroll-speed="2.5"
           className="icon-wrapper rounded-full sm:absolute sm:top-[40%] sm:right-[5%]  2xl:h-[6rem] 2xl:w-[6rem] xl:h-[5.6rem] xl:w-[5.6rem] lg:h-[5.2rem] lg:w-[5.2rem] md:h-[4.8rem] md:w-[4.8rem] vvs:h-[4.4rem] vvs:w-[4.4rem] h-[3.5rem] w-[3.5rem] bg-[#ffffff]/70 flex justify-center items-center"
         >
           <motion.span
@@ -125,7 +125,7 @@ const FloatingIcons = () => {
                 delay: 1.4,
               }}
               src={linkedin}
-              alt="github"
+              alt="linkedin"
               className="sm:h-8 sm:w-8 h-5 w-5"
             />
           </motion.span>
