@@ -20,6 +20,7 @@ const CustomCursor = () => {
     // Move the cursor
     function onMouseMove(e) {
       gsap.to(bigBall, {
+        opacity: 1,
         duration: 0.4,
         x: e.pageX - 15,
         y: e.pageY - 15,
@@ -78,7 +79,7 @@ const CustomCursor = () => {
         viewBox="0 0 54 52"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="cursor__ball cursor__ball--big"
+        className="cursor__ball cursor__ball--big opacity-0"
       >
         <path
           d="M53.5 26C53.5 40.0656 41.6535 51.5 27 51.5C12.3465 51.5 0.5 40.0656 0.5 26C0.5 11.9344 12.3465 0.5 27 0.5C41.6535 0.5 53.5 11.9344 53.5 26Z"

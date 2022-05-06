@@ -46,7 +46,7 @@ const Hero = () => {
   return (
     <section
       data-scroll-section
-      className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:py-48 py-44 md:px-32 sm:px-28 vvs:px-12 px-10"
+      className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:pt-48 sm:pb-0 py-44 md:px-32 sm:px-28 vvs:px-12 px-10"
     >
       <div className="hero-container flex flex-col ">
         <motion.div
@@ -101,7 +101,7 @@ const Hero = () => {
               data-scroll
               data-scroll-delay="0.5"
               data-scroll-speed="1"
-              className="text-white !z-10 2xl:text-[6.5rem] xl:text-[6.2rem] lg:text-[5rem] md:text-[3.5rem] sm:text-[3rem] vvs:text-[2.3rem] text-[2.2rem] tracking-normal xl:leading-[120px] md:leading-[80px] lg:leading-[100px] sm:leading-[80px] vvs:leading-[60px] leading-[40px]"
+              className="text-white/70 !z-10 2xl:text-[6.5rem] xl:text-[6.2rem] lg:text-[5rem] md:text-[3.5rem] sm:text-[3rem] vvs:text-[2.3rem] text-[2.2rem] tracking-normal xl:leading-[120px] md:leading-[80px] lg:leading-[100px] sm:leading-[80px] vvs:leading-[60px] leading-[40px]"
               id="hero-title"
             >
               <AnimatedLetters letters={title} />
@@ -129,7 +129,7 @@ const Hero = () => {
                   data-scroll
                   data-scroll-delay="0.5"
                   data-scroll-speed="2"
-                  className=" text-white/50 xl:text-lg lg:text-base md:text-sm text-xs xl:leading-7 lg:leading-6 leading-5"
+                  className="max-w-md text-white/50 xl:text-lg lg:text-base md:text-sm text-xs xl:leading-7 lg:leading-6 leading-5"
                   id="about-me"
                 >
                   Tarun Sharma is a 19 year old who develop webapps and turn

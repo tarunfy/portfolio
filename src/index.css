@@ -54,6 +54,11 @@
   font-weight: 600;
 }
 
+#project-heading{
+  font-family: 'Glimer-Outlined', sans-serif;
+  font-weight: 600;
+}
+
 .cursor {
   pointer-events: none;      
 } 
