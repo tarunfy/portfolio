@@ -8,12 +8,14 @@ function App() {
   useLocoScroll();
 
   return (
-    <div id="main-container" data-scroll-container>
-      <CustomCursor />
-      <Hero />
-      <Projects />
-      <Contact />
-    </div>
+    <>
+      <div id="main-container" data-scroll-container>
+        <CustomCursor />
+        <Hero />
+        <Projects />
+        <Contact />
+      </div>
+    </>
   );
 }
 

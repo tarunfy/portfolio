@@ -7,7 +7,7 @@ const Projects = () => {
       data-scroll-section
       id="projects"
     >
-      {/* <h1
+      <h1
         data-scroll
         data-scroll-delay="0.1"
         data-scroll-speed="6"
@@ -15,7 +15,7 @@ const Projects = () => {
         id="project-heading"
       >
         Featured <span className="block">Projects</span>
-      </h1> */}
+      </h1>
       {/* <span class="lerp-wrap" data-scroll id="hero-title" className="text-8xl">
         <span
           data-scroll

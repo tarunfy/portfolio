@@ -129,7 +129,7 @@ const Hero = () => {
                   data-scroll
                   data-scroll-delay="0.5"
                   data-scroll-speed="2"
-                  className="max-w-md text-white/50 xl:text-lg lg:text-base md:text-sm text-xs xl:leading-7 lg:leading-6 leading-5"
+                  className="max-w-md text-white/50 xl:text-[1.3rem] lg:text-base md:text-sm text-xs xl:leading-8 lg:leading-6 leading-5"
                   id="about-me"
                 >
                   Tarun Sharma is a 19 year old who develop webapps and turn
