@@ -20,7 +20,7 @@ const FloatingIcons = () => {
           data-scroll
           data-scroll-delay="0.1"
           data-scroll-speed="2.5"
-          className="icon-wrapper rounded-full  sm:absolute sm:top-[55%] sm:left-[3%] 2xl:h-[6rem] 2xl:w-[6rem] xl:h-[5.6rem] xl:w-[5.6rem] lg:h-[5.2rem] lg:w-[5.2rem] md:h-[4.8rem] md:w-[4.8rem] vvs:h-[4.4rem] vvs:w-[4.4rem] h-[3.5rem] w-[3.5rem] bg-[#ffffff]/70 flex justify-center items-center"
+          className="icon-wrapper rounded-full  sm:absolute sm:top-[65%] sm:left-[3%] 2xl:h-[6rem] 2xl:w-[6rem] xl:h-[5.6rem] xl:w-[5.6rem] lg:h-[5.2rem] lg:w-[5.2rem] md:h-[4.8rem] md:w-[4.8rem] vvs:h-[4.4rem] vvs:w-[4.4rem] h-[3.5rem] w-[3.5rem] bg-[#ffffff]/70 flex justify-center items-center"
         >
           <motion.span
             animate={{ opacity: 1, scale: 1 }}
