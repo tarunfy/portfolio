@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const banner = {
   animate: {
     transition: {
-      delayChildren: 0.4,
+      delayChildren: 1,
       staggerChildren: 0.1,
     },
   },
@@ -26,20 +26,22 @@ const letterAnimation = {
 
 const AnimatedLetters = ({ letters }) => {
   return (
-    <motion.span variants={banner} initial="initial" animate="animate">
-      {letters.map((letter, index) => (
-        <motion.span
-          key={index}
-          data-scroll
-          data-scroll-delay="0.5"
-          data-scroll-speed="1"
-          className="inline-block z-40"
-          variants={letterAnimation}
-        >
-          {letter}&nbsp;
-        </motion.span>
-      ))}
-    </motion.span>
+    <>
+      <motion.span variants={banner} initial="initial" animate="animate">
+        {letters.map((letter, index) => (
+          <motion.span
+            key={index}
+            data-scroll
+            data-scroll-delay="0.5"
+            data-scroll-speed="1"
+            className="inline-block z-30 "
+            variants={letterAnimation}
+          >
+            {letter}&nbsp;
+          </motion.span>
+        ))}
+      </motion.span>
+    </>
   );
 };
 

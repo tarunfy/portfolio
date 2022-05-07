@@ -101,16 +101,17 @@ const Hero = () => {
               data-scroll
               data-scroll-delay="0.5"
               data-scroll-speed="1"
-              className="text-white/70 !z-10 2xl:text-[6.5rem] xl:text-[6.2rem] lg:text-[5rem] md:text-[3.5rem] sm:text-[3rem] vvs:text-[2.3rem] text-[2.2rem] tracking-normal xl:leading-[120px] md:leading-[80px] lg:leading-[100px] sm:leading-[80px] vvs:leading-[60px] leading-[40px]"
+              className="text-white/70  !z-10 2xl:text-[6.5rem] xl:text-[6.2rem] lg:text-[5rem] md:text-[3.5rem] sm:text-[3rem] vvs:text-[2.3rem] text-[2.2rem] tracking-normal xl:leading-[120px] md:leading-[80px] lg:leading-[100px] sm:leading-[80px] vvs:leading-[60px] leading-[40px]"
               id="hero-title"
             >
               <AnimatedLetters letters={title} />
             </h1>
+
             <h2
               data-scroll
               data-scroll-delay="0.5"
               data-scroll-speed="1"
-              className="text-white !z-10 2xl:text-[5.5rem] xl:text-[5rem] lg:text-[3.5rem] md:text-[2.6rem] sm:text-[2.2rem] vvs:text-[1.7rem] text-[1.5rem] tracking-normal 2xl:leading-[120px] lg:leading-[100px] md:leading-[70px] sm:leading-[50px] leading-[40px]"
+              className=" text-white !z-10  2xl:text-[5.5rem] xl:text-[5rem] lg:text-[3.5rem] md:text-[2.6rem] sm:text-[2.2rem] vvs:text-[1.7rem] text-[1.5rem] tracking-normal 2xl:leading-[120px] lg:leading-[100px] md:leading-[70px] sm:leading-[50px] leading-[40px]"
               id="sub-hero-title"
             >
               <AnimatedLetters letters={letters} />

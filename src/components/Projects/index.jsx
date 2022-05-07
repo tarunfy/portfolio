@@ -11,10 +11,10 @@ const Projects = () => {
         data-scroll
         data-scroll-delay="0.1"
         data-scroll-speed="6"
-        className="text-white/70 text-[9.5rem] leading-[10rem] cursor-default"
+        className="text-white/70 text-[9rem] leading-[9rem] cursor-default"
         id="project-heading"
       >
-        Featured <span className="block">Projects</span>
+        Featured Projects
       </h1>
       {/* <span class="lerp-wrap" data-scroll id="hero-title" className="text-8xl">
         <span
