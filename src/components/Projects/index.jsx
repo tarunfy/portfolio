@@ -15,6 +15,7 @@ const Projects = () => {
     containers.forEach((container) => {
       let imgContainer = container.querySelector(".img-container");
       let img = container.querySelector("img");
+      let imgWrapper = container.querySelector(".img-wrapper");
       gsap.delayedCall(1, () => {
         const tl = gsap
           .timeline({
@@ -25,26 +26,24 @@ const Projects = () => {
               scroller: "#main-container",
               toggleActions: "play none resume pause",
               markers: true,
-              scrub: 1,
-              anticipatePin: true,
             },
           })
           .set(container, {
             duration: 0,
             visibility: "visible",
-            ease: "Power2.easeInOut",
+            ease: "expo.out",
           })
           .to(imgContainer, {
-            duration: 1,
+            duration: 1.6,
             width: "0%",
-            ease: "Power2.easeInOut",
+            ease: "expo.out",
           })
           .from(
             img,
             {
-              duration: 1.4,
+              duration: 1.6,
               scale: 1.6,
-              ease: "Power2.easeInOut",
+              ease: "expo.out",
             },
             "=-1.6"
           );
@@ -53,7 +52,7 @@ const Projects = () => {
   });
   return (
     <div
-      className="w-full px-44 bg-[#420fe7]"
+      className="w-full px-44 pb-10 bg-[#420fe7]"
       data-scroll-section
       id="projects"
     >
@@ -68,12 +67,18 @@ const Projects = () => {
       </h1>
       <div className="space-y-10 z-30">
         <div
-          className="container"
+          className="container flex justify-between items-center"
           data-scroll
           data-scroll-delay="0.1"
           data-scroll-speed="4"
         >
-          <div className="w-[940px] h-[460px] relative overflow-hidden">
+          <div className="text-container">
+            <h1>
+              <span className="hidden-text">Hirely</span>
+            </h1>
+          </div>
+
+          <div className="w-[940px] h-[460px] relative overflow-hidden img-wrapper">
             <img
               src={hirely}
               alt="project image"
@@ -84,12 +89,12 @@ const Projects = () => {
         </div>
 
         <div
-          className="container"
+          className="container flex justify-between items-center"
           data-scroll
           data-scroll-delay="0.1"
           data-scroll-speed="4"
         >
-          <div className="w-[940px] h-[460px] relative overflow-hidden">
+          <div className="w-[940px] h-[460px] relative overflow-hidden img-wrapper">
             <img
               src={formify}
               alt="project image"
@@ -97,15 +102,27 @@ const Projects = () => {
             />
             <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
           </div>
+
+          <div className="text-container">
+            <h1>
+              <span className="hidden-text">Formify</span>
+            </h1>
+          </div>
         </div>
 
         <div
-          className="container"
+          className="container flex justify-between items-center"
           data-scroll
           data-scroll-delay="0.1"
           data-scroll-speed="4"
         >
-          <div className="w-[940px] h-[460px] relative overflow-hidden">
+          <div className="text-container">
+            <h1>
+              <span className="hidden-text">Easy Staff</span>
+            </h1>
+          </div>
+
+          <div className="w-[940px] h-[460px] relative overflow-hidden img-wrapper">
             <img
               src={easyStaff}
               alt="project image"
@@ -116,18 +133,24 @@ const Projects = () => {
         </div>
 
         <div
-          className="container"
+          className="container flex justify-between items-center"
           data-scroll
           data-scroll-delay="0.1"
           data-scroll-speed="4"
         >
-          <div className="w-[940px] h-[460px] relative overflow-hidden">
+          <div className="w-[940px] h-[460px] relative overflow-hidden img-wrapper">
             <img
               src={sigmaRules}
               alt="project image"
               className="absolute w-[940px]"
             />
             <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+          </div>
+
+          <div className="text-container">
+            <h1>
+              <span className="hidden-text">Sigma Rules</span>
+            </h1>
           </div>
         </div>
       </div>
