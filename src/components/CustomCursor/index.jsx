@@ -6,12 +6,24 @@ const CustomCursor = () => {
     const bigBall = document.querySelector(".cursor__ball--big");
     const socialIcons = document.querySelectorAll(".social");
     const profilePhoto = document.getElementById("profilePhoto");
+    const links = document.querySelectorAll(".link");
+    const repoLinks = document.querySelectorAll(".repo");
 
     // Listeners
     document.body.addEventListener("mousemove", onMouseMove);
     for (let i = 0; i < socialIcons.length; i++) {
       socialIcons[i].addEventListener("mouseenter", onMouseHover);
       socialIcons[i].addEventListener("mouseleave", onMouseHoverOut);
+    }
+
+    for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener("mouseenter", linkMouseHover);
+      links[i].addEventListener("mouseleave", onMouseHoverOut);
+    }
+
+    for (let i = 0; i < repoLinks.length; i++) {
+      repoLinks[i].addEventListener("mouseenter", linkMouseHover);
+      repoLinks[i].addEventListener("mouseleave", onMouseHoverOut);
     }
 
     profilePhoto.addEventListener("mouseenter", profileMouseHover);
@@ -24,6 +36,15 @@ const CustomCursor = () => {
         duration: 0.4,
         x: e.pageX - 15,
         y: e.pageY - 15,
+      });
+    }
+
+    // hover link:
+    function linkMouseHover() {
+      gsap.to(bigBall, {
+        duration: 0.3,
+        scale: 1.4,
+        ease: "Power3.easeInOut",
       });
     }
 
@@ -64,6 +85,11 @@ const CustomCursor = () => {
         ease: "Power3.easeInOut",
       });
       gsap.to(e.target.querySelector("img"), {
+        duration: 0.3,
+        scale: 1,
+        ease: "Power3.easeInOut",
+      });
+      gsap.to(bigBall, {
         duration: 0.3,
         scale: 1,
         ease: "Power3.easeInOut",

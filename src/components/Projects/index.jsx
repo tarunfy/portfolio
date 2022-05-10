@@ -22,18 +22,15 @@ const Projects = () => {
       const contentP = textContainer.children[1];
       const contentBtn = textContainer.children[2];
 
-      console.log(contentLine);
-
       gsap.delayedCall(1, () => {
         const tl = gsap
           .timeline({
             scrollTrigger: {
               trigger: container,
-              start: "top 60%",
-              end: "top top+=100px",
+              start: "top 65%",
+              end: "top top",
               scroller: "#main-container",
               toggleActions: "play none resume pause",
-              markers: true,
             },
           })
           .set(container, {
@@ -88,7 +85,7 @@ const Projects = () => {
   });
   return (
     <div
-      className="w-full px-40 pb-10 bg-[#420fe7]"
+      className="w-full px-40 pb-44 bg-[#420fe7]"
       data-scroll-section
       id="projects"
     >
@@ -121,11 +118,15 @@ const Projects = () => {
             <div className="btn-row flex justify-start space-x-6 items-center">
               <div className="github-btn">
                 <a
-                  className="icon"
+                  className="icon "
                   target="_blank"
                   href="https://github.com/tarunfy/Hirely"
                 >
-                  <img src={github} alt="github" className="h-8 w-8" />
+                  <img
+                    src={github}
+                    alt="github"
+                    className="h-8 w-8 hover:-translate-y-1 transition duration-200 ease-in-out repo"
+                  />
                 </a>
               </div>
               <div className="liveDemo-btn">
@@ -134,7 +135,11 @@ const Projects = () => {
                   target="_blank"
                   href="https://hirely.vercel.app/"
                 >
-                  <img src={rightArrow} alt="arrow" className="h-8 w-8" />
+                  <img
+                    src={rightArrow}
+                    alt="arrow"
+                    className="link h-8 w-8 hover:-rotate-[45deg] transition duration-200 ease-in-out"
+                  />
                 </a>
               </div>
             </div>
@@ -192,7 +197,11 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/tarunfy/formify"
                 >
-                  <img src={github} alt="github" className="h-8 w-8" />
+                  <img
+                    src={github}
+                    alt="github"
+                    className="h-8 w-8 hover:-translate-y-1 transition duration-200 ease-in-out repo"
+                  />
                 </a>
               </div>
               <div className="liveDemo-btn">
@@ -201,7 +210,11 @@ const Projects = () => {
                   target="_blank"
                   href="https://formifyy.vercel.app/"
                 >
-                  <img src={rightArrow} alt="arrow" className="h-8 w-8" />
+                  <img
+                    src={rightArrow}
+                    alt="arrow"
+                    className="link h-8 w-8 hover:-rotate-[45deg] transition duration-200 ease-in-out"
+                  />
                 </a>
               </div>
             </div>
@@ -231,7 +244,11 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/tarunfy/EasyStaff"
                 >
-                  <img src={github} alt="github" className="h-8 w-8" />
+                  <img
+                    src={github}
+                    alt="github"
+                    className="h-8 w-8 hover:-translate-y-1 transition duration-200 ease-in-out repo"
+                  />
                 </a>
               </div>
               <div className="liveDemo-btn">
@@ -240,7 +257,11 @@ const Projects = () => {
                   target="_blank"
                   href="https://tankhava-book.vercel.app/"
                 >
-                  <img src={rightArrow} alt="arrow" className="h-8 w-8" />
+                  <img
+                    src={rightArrow}
+                    alt="arrow"
+                    className="link h-8 w-8 hover:-rotate-[45deg] transition duration-200 ease-in-out"
+                  />
                 </a>
               </div>
             </div>
@@ -287,8 +308,9 @@ const Projects = () => {
               </div>
             </h1>
             <p className="font-normal text-xl text-right">
-              Hirely is a platform where candidates can get hired by the
-              recruiters from different upcoming starups.
+              Sigma Rules is a webapp that allows users to create new{" "}
+              <span className="italic">Sigma Rules</span> which can be read by
+              everyone globally.
             </p>
             <div className="btn-row flex justify-end space-x-6 items-center">
               <div className="github-btn">
@@ -297,16 +319,24 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/tarunfy/Hirely"
                 >
-                  <img src={github} alt="github" className="h-8 w-8" />
+                  <img
+                    src={github}
+                    alt="github"
+                    className="h-8 w-8 hover:-translate-y-1 transition duration-200 ease-in-out repo"
+                  />
                 </a>
               </div>
               <div className="liveDemo-btn">
                 <a
                   className="icon"
                   target="_blank"
-                  href="https://hirely.vercel.app/"
+                  href="https://sigma-rules.netlify.app/"
                 >
-                  <img src={rightArrow} alt="arrow" className="h-8 w-8" />
+                  <img
+                    src={rightArrow}
+                    alt="arrow"
+                    className="link h-8 w-8 hover:-rotate-[45deg] transition duration-200 ease-in-out"
+                  />
                 </a>
               </div>
             </div>

@@ -1,20 +1,20 @@
 <svg width="1921" height="1022" viewBox="0 0 1921 1022" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_6_30)">
 <rect width="1921" height="1022" fill="#F4F4F4"/>
-<path d="M3118.19 307.353C3381.37 385.335 2731.68 893.72 2653.7 1156.9C2575.72 1420.07 2595.36 2008.41 2332.19 1930.43C2069.01 1852.45 1622.67 1137.67 1700.66 874.499C1778.64 611.324 2855.02 229.372 3118.19 307.353Z" fill="#4C00FF"/>
+<path d="M2821.76 301.04C3099.26 383.265 2424.61 884.254 2346.62 1147.43C2268.64 1410.6 2297.99 2001.82 2020.5 1919.59C1743 1837.37 1263.75 1112.84 1341.73 849.668C1419.71 586.493 2544.27 218.816 2821.76 301.04Z" fill="#4C00FF"/>
 <path d="M-357.856 1236.43C-626.073 1294.75 -301.313 536.411 -359.639 268.194C-417.965 -0.0231124 -718.384 -506.262 -450.166 -564.588C-181.949 -622.914 553.334 -211.241 611.66 56.9765C669.987 325.194 -89.6394 1178.1 -357.856 1236.43Z" fill="#4C00FF"/>
 <g filter="url(#filter0_d_6_30)">
-<rect width="1029.14" height="594.776" transform="matrix(0.994522 0.104528 -0.269424 0.963022 77.2471 52)" fill="url(#pattern0)" shape-rendering="crispEdges"/>
+<rect width="702.215" height="405.835" transform="matrix(0.994522 0.104528 -0.269424 0.963022 232.342 94)" fill="url(#pattern0)" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter1_d_6_30)">
-<rect width="788" height="451" transform="matrix(0.994522 -0.104528 0.261515 0.965199 1019 134.368)" fill="url(#pattern1)" shape-rendering="crispEdges"/>
+<rect width="788" height="451" transform="matrix(0.994522 -0.104528 0.261515 0.965199 961 205.368)" fill="url(#pattern1)" shape-rendering="crispEdges"/>
 </g>
 <g filter="url(#filter2_d_6_30)">
-<rect x="358.321" y="345.16" width="1280.34" height="729.268" fill="url(#pattern2)" shape-rendering="crispEdges"/>
+<rect x="488" y="518" width="886" height="504" fill="url(#pattern2)" shape-rendering="crispEdges"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_d_6_30" x="-87" y="52" width="1191.75" height="688.357" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_6_30" x="119" y="94" width="815.71" height="472.229" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
@@ -25,9 +25,9 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_30" result="shape"/>
 </filter>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_6_30" transform="translate(-0.00560575) scale(0.000351115 0.000607533)"/>
+<use xlink:href="#image0_6_30" transform="translate(-0.00560581) scale(0.000351115 0.000607533)"/>
 </pattern>
-<filter id="filter1_d_6_30" x="1015" y="52" width="909.626" height="525.673" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d_6_30" x="957" y="123" width="909.626" height="525.673" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
@@ -40,7 +40,7 @@
 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image1_6_30" transform="translate(0 -0.000204792) scale(0.000347222 0.000606677)"/>
 </pattern>
-<filter id="filter2_d_6_30" x="329.321" y="320.16" width="1338.34" height="787.268" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter2_d_6_30" x="459" y="493" width="944" height="562" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="4"/>
@@ -51,7 +51,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_6_30" result="shape"/>
 </filter>
 <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image2_6_30" transform="translate(0 -0.000219855) scale(0.000347464 0.000610024)"/>
+<use xlink:href="#image2_6_30" transform="translate(0 -0.000871416) scale(0.000347464 0.000610819)"/>
 </pattern>
 <clipPath id="clip0_6_30">
 <rect width="1921" height="1022" fill="white"/>
