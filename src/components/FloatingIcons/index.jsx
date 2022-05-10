@@ -1,5 +1,5 @@
 import React from "react";
-import github from "../../assets/images/github.svg";
+import github from "../../assets/images/github2.svg";
 import linkedin from "../../assets/images/linkedin.svg";
 import gmail from "../../assets/images/gmail.svg";
 import { motion } from "framer-motion";

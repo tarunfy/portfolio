@@ -32,6 +32,11 @@
 
 @layer base{
 
+  html{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
 #hero-title{
   font-family: 'Glimer-Outlined', sans-serif;
   font-weight: 100;
@@ -80,8 +85,8 @@
   background: #420fe7;
 }
 
-.container{
-  visibility: hidden;
+.text-container{
+  font-family: 'Glimer-Bold', sans-serif;
 }
 
 }

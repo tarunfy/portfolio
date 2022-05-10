@@ -3,6 +3,8 @@ import hirely from "../../assets/images/Hirely.svg";
 import easyStaff from "../../assets/images/EasyStaff.svg";
 import formify from "../../assets/images/Formify.svg";
 import sigmaRules from "../../assets/images/SigmaRules.svg";
+import rightArrow from "../../assets/images/rightArrow.svg";
+import github from "../../assets/images/github.svg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -13,9 +15,15 @@ const Projects = () => {
     let containers = document.querySelectorAll(".container");
 
     containers.forEach((container) => {
-      let imgContainer = container.querySelector(".img-container");
-      let img = container.querySelector("img");
-      let imgWrapper = container.querySelector(".img-wrapper");
+      const imgContainer = container.querySelector(".img-container");
+      const img = container.querySelector(".img");
+      const textContainer = container.querySelector(".text-container");
+      const contentLine = textContainer.children[0].children[0];
+      const contentP = textContainer.children[1];
+      const contentBtn = textContainer.children[2];
+
+      console.log(contentLine);
+
       gsap.delayedCall(1, () => {
         const tl = gsap
           .timeline({
@@ -31,7 +39,6 @@ const Projects = () => {
           .set(container, {
             duration: 0,
             visibility: "visible",
-            ease: "expo.out",
           })
           .to(imgContainer, {
             duration: 1.6,
@@ -45,14 +52,43 @@ const Projects = () => {
               scale: 1.6,
               ease: "expo.out",
             },
-            "=-1.6"
+            0.2
+          )
+          .from(
+            contentLine.firstChild,
+            {
+              duration: 1,
+              y: "54px",
+              ease: "power3.out",
+            },
+            0.5
+          )
+          .from(
+            contentP,
+            {
+              duration: 1,
+              y: 20,
+              opacity: 0,
+              ease: "power3.out",
+            },
+            1
+          )
+          .from(
+            contentBtn,
+            {
+              duration: 1,
+              y: 20,
+              opacity: 0,
+              ease: "power3.out",
+            },
+            1.2
           );
       });
     });
   });
   return (
     <div
-      className="w-full px-44 pb-10 bg-[#420fe7]"
+      className="w-full px-40 pb-10 bg-[#420fe7]"
       data-scroll-section
       id="projects"
     >
@@ -66,91 +102,214 @@ const Projects = () => {
         Featured Projects
       </h1>
       <div className="space-y-10 z-30">
-        <div
-          className="container flex justify-between items-center"
-          data-scroll
-          data-scroll-delay="0.1"
-          data-scroll-speed="4"
-        >
-          <div className="text-container">
-            <h1>
-              <span className="hidden-text">Hirely</span>
+        <div className="container space-x-4 flex justify-between items-center invisible">
+          <div
+            data-scroll
+            data-scroll-delay="0.1"
+            data-scroll-speed="3"
+            className="text-container text-white space-y-4 max-w-md"
+          >
+            <h1 className="hidden-text font-bold text-5xl">
+              <div className="content-line m-0 h-[52px] overflow-hidden bg-[#420fe7]">
+                <div className="content-line-inner">Hirely</div>
+              </div>
             </h1>
+            <p className="font-normal text-xl">
+              Hirely is a platform where candidates can get hired by the
+              recruiters from different upcoming starups.
+            </p>
+            <div className="btn-row flex justify-start space-x-6 items-center">
+              <div className="github-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://github.com/tarunfy/Hirely"
+                >
+                  <img src={github} alt="github" className="h-8 w-8" />
+                </a>
+              </div>
+              <div className="liveDemo-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://hirely.vercel.app/"
+                >
+                  <img src={rightArrow} alt="arrow" className="h-8 w-8" />
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div className="w-[940px] h-[460px] relative overflow-hidden img-wrapper">
+          <div
+            data-scroll
+            data-scroll-delay="0.1"
+            data-scroll-speed="3"
+            className="w-[680px] h-[560px] relative overflow-hidden img-wrapper"
+          >
             <img
               src={hirely}
               alt="project image"
-              className="absolute w-[940px]"
+              className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+            <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
           </div>
         </div>
 
-        <div
-          className="container flex justify-between items-center"
-          data-scroll
-          data-scroll-delay="0.1"
-          data-scroll-speed="4"
-        >
-          <div className="w-[940px] h-[460px] relative overflow-hidden img-wrapper">
+        <div className="container space-x-4 flex justify-between items-center invisible">
+          <div
+            data-scroll
+            data-scroll-delay="0.1"
+            data-scroll-speed="3"
+            className="w-[680px] h-[560px] relative overflow-hidden img-wrapper"
+          >
             <img
               src={formify}
               alt="project image"
-              className="absolute w-[940px]"
+              className="absolute w-full object-cover h-full img"
             />
             <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
           </div>
 
-          <div className="text-container">
-            <h1>
-              <span className="hidden-text">Formify</span>
+          <div
+            data-scroll
+            data-scroll-delay="0.1"
+            data-scroll-speed="3"
+            className="text-container text-white space-y-4 max-w-md"
+          >
+            <h1 className="hidden-text font-bold text-5xl text-right">
+              <div className="content-line m-0 h-[52px] overflow-hidden bg-[#420fe7]">
+                <div className="content-line-inner">Formify</div>
+              </div>
             </h1>
+            <p className="font-normal text-xl text-right">
+              The fastest and the easiest way to create forms and collect
+              submissions on the internet.
+            </p>
+            <div className="btn-row flex justify-end space-x-6 items-center">
+              <div className="github-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://github.com/tarunfy/formify"
+                >
+                  <img src={github} alt="github" className="h-8 w-8" />
+                </a>
+              </div>
+              <div className="liveDemo-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://formifyy.vercel.app/"
+                >
+                  <img src={rightArrow} alt="arrow" className="h-8 w-8" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div
-          className="container flex justify-between items-center"
-          data-scroll
-          data-scroll-delay="0.1"
-          data-scroll-speed="4"
-        >
-          <div className="text-container">
-            <h1>
-              <span className="hidden-text">Easy Staff</span>
+        <div className="container space-x-4 flex justify-between items-center invisible">
+          <div
+            data-scroll
+            data-scroll-delay="0.1"
+            data-scroll-speed="3"
+            className="text-container text-white space-y-4 max-w-md"
+          >
+            <h1 className="hidden-text font-bold text-5xl">
+              <div className="content-line m-0 h-[52px] overflow-hidden bg-[#420fe7]">
+                <div className="content-line-inner">Easy Staff</div>
+              </div>
             </h1>
+            <p className="font-normal text-xl">
+              Easy Staff allows you to manage your staff attendance, salary,
+              payments and compliances in few clicks.
+            </p>
+            <div className="btn-row flex justify-start space-x-6 items-center">
+              <div className="github-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://github.com/tarunfy/EasyStaff"
+                >
+                  <img src={github} alt="github" className="h-8 w-8" />
+                </a>
+              </div>
+              <div className="liveDemo-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://tankhava-book.vercel.app/"
+                >
+                  <img src={rightArrow} alt="arrow" className="h-8 w-8" />
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div className="w-[940px] h-[460px] relative overflow-hidden img-wrapper">
+          <div
+            data-scroll
+            data-scroll-delay="0.1"
+            data-scroll-speed="3"
+            className="w-[680px] h-[560px] relative overflow-hidden img-wrapper"
+          >
             <img
               src={easyStaff}
               alt="project image"
-              className="absolute w-[940px]"
+              className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+            <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
           </div>
         </div>
 
-        <div
-          className="container flex justify-between items-center"
-          data-scroll
-          data-scroll-delay="0.1"
-          data-scroll-speed="4"
-        >
-          <div className="w-[940px] h-[460px] relative overflow-hidden img-wrapper">
+        <div className="container space-x-4 flex justify-between items-center invisible">
+          <div
+            data-scroll
+            data-scroll-delay="0.1"
+            data-scroll-speed="3"
+            className="w-[680px] h-[560px] relative overflow-hidden img-wrapper"
+          >
             <img
               src={sigmaRules}
               alt="project image"
-              className="absolute w-[940px]"
+              className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
+            <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
           </div>
-
-          <div className="text-container">
-            <h1>
-              <span className="hidden-text">Sigma Rules</span>
+          <div
+            data-scroll
+            data-scroll-delay="0.1"
+            data-scroll-speed="3"
+            className="text-container text-white space-y-4 max-w-md"
+          >
+            <h1 className="hidden-text font-bold text-5xl text-right">
+              <div className="content-line m-0 h-[52px] overflow-hidden bg-[#420fe7]">
+                <div className="content-line-inner">Sigma Rules</div>
+              </div>
             </h1>
+            <p className="font-normal text-xl text-right">
+              Hirely is a platform where candidates can get hired by the
+              recruiters from different upcoming starups.
+            </p>
+            <div className="btn-row flex justify-end space-x-6 items-center">
+              <div className="github-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://github.com/tarunfy/Hirely"
+                >
+                  <img src={github} alt="github" className="h-8 w-8" />
+                </a>
+              </div>
+              <div className="liveDemo-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://hirely.vercel.app/"
+                >
+                  <img src={rightArrow} alt="arrow" className="h-8 w-8" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
