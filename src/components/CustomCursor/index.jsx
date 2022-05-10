@@ -98,7 +98,7 @@ const CustomCursor = () => {
   }, []);
 
   return (
-    <div class="cursor hidden xl:block">
+    <div className="cursor hidden xl:block">
       <svg
         width="44"
         height="42"

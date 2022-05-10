@@ -85,7 +85,7 @@ const Projects = () => {
   });
   return (
     <div
-      className="w-full px-40 pb-44 bg-[#420fe7]"
+      className="w-full  pb-40 xl:px-44 lg:px-40 sm:pb-0 md:px-32 sm:px-28 vvs:px-12 px-10 bg-[#420fe7]"
       data-scroll-section
       id="projects"
     >
@@ -93,7 +93,7 @@ const Projects = () => {
         data-scroll
         data-scroll-delay="0.1"
         data-scroll-speed="4"
-        className="text-white/70 z-40 text-[9rem] leading-[9rem] cursor-default"
+        className="text-white/70 z-40 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.4rem] lg:text-[7.5rem] xl:text-[9.2rem] 2xl:text-[10.8rem]  text-[3.5rem] leading-[3.5rem] sm:leading-[5.5rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
         id="project-heading"
       >
         Featured Projects
@@ -234,7 +234,7 @@ const Projects = () => {
               </div>
             </h1>
             <p className="font-normal text-xl">
-              Easy Staff allows you to manage your staff attendance, salary,
+              Easy Staff allows you to manage your staff's attendance, salary,
               payments and compliances in few clicks.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center">
@@ -294,7 +294,7 @@ const Projects = () => {
               alt="project image"
               className="absolute w-full object-cover h-full img"
             />
-            <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
+            <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
           </div>
           <div
             data-scroll
