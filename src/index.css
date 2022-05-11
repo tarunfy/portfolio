@@ -76,6 +76,11 @@
   font-weight: 600;
 }
 
+#tech-title{
+  font-family: 'Glimer-Outlined', sans-serif;
+  font-weight: 600;
+}
+
 .cursor {
   pointer-events: none;      
 } 

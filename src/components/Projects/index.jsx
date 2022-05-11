@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import hirely from "../../assets/images/Hirely.svg";
 import easyStaff from "../../assets/images/EasyStaff.svg";
 import formify from "../../assets/images/Formify.svg";
@@ -81,7 +81,7 @@ const Projects = () => {
           );
       });
     });
-  });
+  }, []);
 
   return (
     <div
