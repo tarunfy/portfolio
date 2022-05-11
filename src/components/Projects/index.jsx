@@ -3,8 +3,7 @@ import hirely from "../../assets/images/Hirely.svg";
 import easyStaff from "../../assets/images/EasyStaff.svg";
 import formify from "../../assets/images/Formify.svg";
 import sigmaRules from "../../assets/images/SigmaRules.svg";
-import rightArrow from "../../assets/images/rightArrow.svg";
-import github from "../../assets/images/github.svg";
+import { BsGithub, BsArrowRight } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -85,7 +84,7 @@ const Projects = () => {
   });
   return (
     <div
-      className="w-full  pb-40 xl:px-44 lg:px-40 sm:pb-0 md:px-32 sm:px-28 vvs:px-12 px-10 bg-[#420fe7]"
+      className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 bg-[#420fe7]"
       data-scroll-section
       id="projects"
     >
@@ -98,22 +97,22 @@ const Projects = () => {
       >
         Featured Projects
       </h1>
-      <div className="space-y-10 z-30">
-        <div className="container space-x-4 flex justify-between items-center invisible">
+      <div className="space-y-5 sm:space-y-10 xl:space-y-16 z-30">
+        <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div
             data-scroll
             data-scroll-delay="0.1"
             data-scroll-speed="3"
-            className="text-container text-white space-y-4 max-w-md"
+            className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 "
           >
-            <h1 className="hidden-text font-bold text-5xl">
-              <div className="content-line m-0 h-[52px] overflow-hidden bg-[#420fe7]">
+            <h1 className="hidden-text font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+              <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
                 <div className="content-line-inner">Hirely</div>
               </div>
             </h1>
-            <p className="font-normal text-xl">
-              Hirely is a platform where candidates can get hired by the
-              recruiters from different upcoming starups.
+            <p className="font-normal text-white/90 xl:text-2xl sm:text-xl 2xl:text-3xl text-base">
+              The fastest and the easiest way to create forms and collect
+              submissions on the internet.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center">
               <div className="github-btn">
@@ -122,11 +121,7 @@ const Projects = () => {
                   target="_blank"
                   href="https://github.com/tarunfy/Hirely"
                 >
-                  <img
-                    src={github}
-                    alt="github"
-                    className="h-8 w-8 hover:-translate-y-1 transition duration-200 ease-in-out repo"
-                  />
+                  <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                 </a>
               </div>
               <div className="liveDemo-btn">
@@ -135,11 +130,7 @@ const Projects = () => {
                   target="_blank"
                   href="https://hirely.vercel.app/"
                 >
-                  <img
-                    src={rightArrow}
-                    alt="arrow"
-                    className="link h-8 w-8 hover:-rotate-[45deg] transition duration-200 ease-in-out"
-                  />
+                  <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                 </a>
               </div>
             </div>
@@ -149,7 +140,7 @@ const Projects = () => {
             data-scroll
             data-scroll-delay="0.1"
             data-scroll-speed="3"
-            className="w-[680px] h-[560px] relative overflow-hidden img-wrapper"
+            className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper"
           >
             <img
               src={hirely}
@@ -160,12 +151,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="container space-x-4 flex justify-between items-center invisible">
+        <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div
             data-scroll
             data-scroll-delay="0.1"
             data-scroll-speed="3"
-            className="w-[680px] h-[560px] relative overflow-hidden img-wrapper"
+            className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper"
           >
             <img
               src={formify}
@@ -179,29 +170,25 @@ const Projects = () => {
             data-scroll
             data-scroll-delay="0.1"
             data-scroll-speed="3"
-            className="text-container text-white space-y-4 max-w-md"
+            className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3"
           >
-            <h1 className="hidden-text font-bold text-5xl text-right">
-              <div className="content-line m-0 h-[52px] overflow-hidden bg-[#420fe7]">
+            <h1 className="hidden-text font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+              <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
                 <div className="content-line-inner">Formify</div>
               </div>
             </h1>
-            <p className="font-normal text-xl text-right">
-              The fastest and the easiest way to create forms and collect
-              submissions on the internet.
+            <p className="font-normal text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl text-base lg:text-right">
+              Hirely is a platform where candidates can get hired by the
+              recruiters from different upcoming starups.
             </p>
-            <div className="btn-row flex justify-end space-x-6 items-center">
+            <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
               <div className="github-btn">
                 <a
-                  className="icon"
+                  className="icon "
                   target="_blank"
                   href="https://github.com/tarunfy/formify"
                 >
-                  <img
-                    src={github}
-                    alt="github"
-                    className="h-8 w-8 hover:-translate-y-1 transition duration-200 ease-in-out repo"
-                  />
+                  <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                 </a>
               </div>
               <div className="liveDemo-btn">
@@ -210,45 +197,37 @@ const Projects = () => {
                   target="_blank"
                   href="https://formifyy.vercel.app/"
                 >
-                  <img
-                    src={rightArrow}
-                    alt="arrow"
-                    className="link h-8 w-8 hover:-rotate-[45deg] transition duration-200 ease-in-out"
-                  />
+                  <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="container space-x-4 flex justify-between items-center invisible">
+        <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div
             data-scroll
             data-scroll-delay="0.1"
             data-scroll-speed="3"
-            className="text-container text-white space-y-4 max-w-md"
+            className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 "
           >
-            <h1 className="hidden-text font-bold text-5xl">
-              <div className="content-line m-0 h-[52px] overflow-hidden bg-[#420fe7]">
+            <h1 className="hidden-text font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+              <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
                 <div className="content-line-inner">Easy Staff</div>
               </div>
             </h1>
-            <p className="font-normal text-xl">
-              Easy Staff allows you to manage your staff's attendance, salary,
-              payments and compliances in few clicks.
+            <p className="font-normal text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl text-base">
+              Easy Staff allows you to manage your staff's attendance, salary
+              and payments in few clicks.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center">
               <div className="github-btn">
                 <a
-                  className="icon"
+                  className="icon "
                   target="_blank"
                   href="https://github.com/tarunfy/EasyStaff"
                 >
-                  <img
-                    src={github}
-                    alt="github"
-                    className="h-8 w-8 hover:-translate-y-1 transition duration-200 ease-in-out repo"
-                  />
+                  <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                 </a>
               </div>
               <div className="liveDemo-btn">
@@ -257,11 +236,7 @@ const Projects = () => {
                   target="_blank"
                   href="https://tankhava-book.vercel.app/"
                 >
-                  <img
-                    src={rightArrow}
-                    alt="arrow"
-                    className="link h-8 w-8 hover:-rotate-[45deg] transition duration-200 ease-in-out"
-                  />
+                  <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                 </a>
               </div>
             </div>
@@ -271,7 +246,7 @@ const Projects = () => {
             data-scroll
             data-scroll-delay="0.1"
             data-scroll-speed="3"
-            className="w-[680px] h-[560px] relative overflow-hidden img-wrapper"
+            className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper"
           >
             <img
               src={easyStaff}
@@ -282,12 +257,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="container space-x-4 flex justify-between items-center invisible">
+        <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div
             data-scroll
             data-scroll-delay="0.1"
             data-scroll-speed="3"
-            className="w-[680px] h-[560px] relative overflow-hidden img-wrapper"
+            className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper"
           >
             <img
               src={sigmaRules}
@@ -296,34 +271,30 @@ const Projects = () => {
             />
             <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
           </div>
+
           <div
             data-scroll
             data-scroll-delay="0.1"
             data-scroll-speed="3"
-            className="text-container text-white space-y-4 max-w-md"
+            className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3"
           >
-            <h1 className="hidden-text font-bold text-5xl text-right">
-              <div className="content-line m-0 h-[52px] overflow-hidden bg-[#420fe7]">
+            <h1 className="hidden-text font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+              <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
                 <div className="content-line-inner">Sigma Rules</div>
               </div>
             </h1>
-            <p className="font-normal text-xl text-right">
-              Sigma Rules is a webapp that allows users to create new{" "}
-              <span className="italic">Sigma Rules</span> which can be read by
-              everyone globally.
+            <p className="font-normal text-white/90 xl:text-2xl sm:text-xl 2xl:text-3xl text-base lg:text-right">
+              Sigma Rules is a webapp that allows users to create new sigma
+              rules which can be read by everyone globally.
             </p>
-            <div className="btn-row flex justify-end space-x-6 items-center">
+            <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
               <div className="github-btn">
                 <a
-                  className="icon"
+                  className="icon "
                   target="_blank"
-                  href="https://github.com/tarunfy/Hirely"
+                  href="https://github.com/tarunfy/sigma-rules"
                 >
-                  <img
-                    src={github}
-                    alt="github"
-                    className="h-8 w-8 hover:-translate-y-1 transition duration-200 ease-in-out repo"
-                  />
+                  <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                 </a>
               </div>
               <div className="liveDemo-btn">
@@ -332,83 +303,13 @@ const Projects = () => {
                   target="_blank"
                   href="https://sigma-rules.netlify.app/"
                 >
-                  <img
-                    src={rightArrow}
-                    alt="arrow"
-                    className="link h-8 w-8 hover:-rotate-[45deg] transition duration-200 ease-in-out"
-                  />
+                  <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                 </a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <span class="lerp-wrap" data-scroll id="hero-title" className="text-8xl">
-        <span
-          data-scroll
-          data-scroll-delay="0.18"
-          data-scroll-speed="6"
-          className="inline-block"
-        >
-          F
-        </span>
-        <span
-          data-scroll
-          data-scroll-delay="0.14"
-          data-scroll-speed="6"
-          className="inline-block"
-        >
-          I
-        </span>
-        <span
-          data-scroll
-          data-scroll-delay="0.12"
-          data-scroll-speed="6"
-          className="inline-block"
-        >
-          R
-        </span>
-        <span
-          data-scroll
-          data-scroll-delay="0.1"
-          data-scroll-speed="6"
-          className="inline-block"
-        >
-          S
-        </span>
-        <span
-          data-scroll
-          data-scroll-delay="0.08"
-          data-scroll-speed="6"
-          className="inline-block"
-        >
-          T
-        </span>
-      </span> */}
-      {/* <div className="transform rotate-6 skew-x-12">
-        <div
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="20"
-          data-scroll-target="#projects"
-        >
-          <span className="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">
-            Social Media — Email Marketing — Digital Advertising
-          </span>
-        </div>
-      </div> */}
-      {/* <div className="transform -rotate-6 -skew-x-12 mt-40">
-        <div
-          data-scroll
-          data-scroll-direction="horizontal"
-          data-scroll-speed="-20"
-          data-scroll-target="#projects"
-        >
-          <span className="text-3xl sm:text-4xl md:text-6xl 2xl:text-7xl bg-green-400 p-5 whitespace-nowrap">
-            Web Development - Motion Design - Graphic Design
-          </span>
-        </div>
-      </div> */}
     </div>
   );
 };
