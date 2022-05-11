@@ -82,6 +82,7 @@ const Projects = () => {
       });
     });
   });
+
   return (
     <div
       className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 bg-[#420fe7]"
@@ -98,6 +99,7 @@ const Projects = () => {
         Featured Projects
       </h1>
       <div className="space-y-5 sm:space-y-10 xl:space-y-16 z-30">
+        {/* Hirely */}
         <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div
             data-scroll
@@ -151,6 +153,7 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* Formify */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div
             data-scroll
@@ -204,6 +207,7 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* Easy Staff */}
         <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div
             data-scroll
@@ -257,6 +261,7 @@ const Projects = () => {
           </div>
         </div>
 
+        {/* Sigma Rules */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div
             data-scroll

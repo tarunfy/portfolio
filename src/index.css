@@ -37,6 +37,18 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .img{
+    will-change: scale;
+  }
+
+  .img-container {
+    will-change: width;
+  }
+
+  .container{
+    will-change: visibility;
+  }
+
 #hero-title{
   font-family: 'Glimer-Outlined', sans-serif;
   font-weight: 100;
