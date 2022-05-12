@@ -32,20 +32,25 @@ const Projects = () => {
             },
           })
           .set(container, {
-            duration: 0,
+            duration: 0.5,
             visibility: "visible",
+            ease: "power4.Out",
           })
-          .to(imgContainer, {
-            duration: 1.6,
-            width: "0%",
-            ease: "expo.out",
-          })
+          .to(
+            imgContainer,
+            {
+              duration: 1.6,
+              width: "0%",
+              ease: "power4.out",
+            },
+            0.2
+          )
           .from(
             img,
             {
               duration: 1.6,
               scale: 1.6,
-              ease: "expo.out",
+              ease: "power4.out",
             },
             0.2
           )
@@ -54,7 +59,7 @@ const Projects = () => {
             {
               duration: 1,
               y: "54px",
-              ease: "power3.out",
+              ease: "power4.inOut",
             },
             0.5
           )
@@ -64,7 +69,7 @@ const Projects = () => {
               duration: 1,
               y: 20,
               opacity: 0,
-              ease: "power3.out",
+              ease: "power4.inOut",
             },
             1
           )
@@ -74,30 +79,52 @@ const Projects = () => {
               duration: 1,
               y: 20,
               opacity: 0,
-              ease: "power3.out",
+              ease: "power4.inOut",
             },
             1.2
           );
       });
+
+      const tl2 = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#project-heading",
+            start: "top 95%",
+            toggleActions: "play none resume pause",
+          },
+        })
+        .fromTo(
+          "#project-heading",
+          {
+            y: 70,
+            opacity: 0,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            ease: "power4.inOut",
+            duration: 1.4,
+          }
+        );
     });
   }, []);
 
   return (
     <div
-      className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 "
+      className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10"
       id="projects"
     >
       <h1
-        className="text-white/70 z-40 mb-32 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.4rem] lg:text-[7.5rem] xl:text-[9.2rem] 2xl:text-[10.8rem]  text-[3.5rem] leading-[3.5rem] sm:leading-[5.5rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
+        className="text-white/70 z-40 lg:mb-32 mb-20 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.4rem] lg:text-[7.5rem] xl:text-[9.2rem] 2xl:text-[10.8rem]  text-[3.5rem] leading-[3.5rem] sm:leading-[5.5rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
         id="project-heading"
       >
         Featured Projects
       </h1>
-      <div className="space-y-5 sm:space-y-10 xl:space-y-[35vh] z-30">
+      <div className="sm:space-y-40 space-y-32 xl:space-y-[35vh] z-30">
         {/* Hirely */}
-        <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
+        <div className="container lg:space-x-2  flex flex-col-reverse lg:flex-row lg:justify-between  lg:items-center items-start invisible ">
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
-            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
               <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
                 <div className="content-line-inner">Hirely</div>
               </div>
@@ -150,7 +177,7 @@ const Projects = () => {
           </div>
 
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
-            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
               <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
                 <div className="content-line-inner">Formify</div>
               </div>
@@ -185,7 +212,7 @@ const Projects = () => {
         {/* Easy Staff */}
         <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
-            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
               <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
                 <div className="content-line-inner">Easy Staff</div>
               </div>
@@ -238,7 +265,7 @@ const Projects = () => {
           </div>
 
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
-            <h1 className="hidden-text cursor-default font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+            <h1 className="hidden-text cursor-default font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
               <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
                 <div className="content-line-inner">Sigma Rules</div>
               </div>
