@@ -44,12 +44,12 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:pt-48 sm:pb-0 pt-40 md:px-32 sm:px-28 vvs:px-12 px-10">
+    <section className="w-full cursor-default bg-[#420fe7] xl:px-44 lg:px-40 sm:pt-48 sm:pb-0 pt-28 md:px-32 sm:px-28 vvs:px-12 px-10">
       <div className="hero-container flex flex-col">
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
           className="flex justify-between items-center"
         >
           <div className="w-fit">
@@ -102,12 +102,12 @@ const Hero = () => {
           <motion.div
             animate={{ opacity: 1 }}
             initial={{ opacity: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <div className="w-full flex md:flex-row flex-col justify-between items-center">
+            <div className="w-full flex md:flex-row flex-col justify-between items-center ">
               <div>
                 <p
-                  className=" text-white/50 xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5"
+                  className=" text-white/50 xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-5 md:mb-0"
                   id="about-me"
                 >
                   Tarun Sharma is a 19 year old who develop webapps and turn
