@@ -8,6 +8,7 @@ const CustomCursor = () => {
     const profilePhoto = document.getElementById("profilePhoto");
     const links = document.querySelectorAll(".link");
     const repoLinks = document.querySelectorAll(".repo");
+    const techIcons = document.querySelectorAll(".tech");
 
     // Listeners
     document.body.addEventListener("mousemove", onMouseMove);
@@ -24,6 +25,11 @@ const CustomCursor = () => {
     for (let i = 0; i < repoLinks.length; i++) {
       repoLinks[i].addEventListener("mouseenter", linkMouseHover);
       repoLinks[i].addEventListener("mouseleave", onMouseHoverOut);
+    }
+
+    for (let i = 0; i < techIcons.length; i++) {
+      techIcons[i].addEventListener("mouseenter", profileMouseHover);
+      techIcons[i].addEventListener("mouseleave", onMouseHoverOut);
     }
 
     profilePhoto.addEventListener("mouseenter", profileMouseHover);

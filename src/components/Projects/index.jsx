@@ -107,12 +107,12 @@ const Projects = () => {
             data-scroll-speed="3"
             className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 "
           >
-            <h1 className="hidden-text font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
               <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
                 <div className="content-line-inner">Hirely</div>
               </div>
             </h1>
-            <p className="font-normal text-white/90 xl:text-2xl sm:text-xl 2xl:text-3xl text-base">
+            <p className="font-normal cursor-default text-white/90 xl:text-2xl sm:text-xl 2xl:text-3xl text-base">
               The fastest and the easiest way to create forms and collect
               submissions on the internet.
             </p>
@@ -175,12 +175,12 @@ const Projects = () => {
             data-scroll-speed="3"
             className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3"
           >
-            <h1 className="hidden-text font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
               <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
                 <div className="content-line-inner">Formify</div>
               </div>
             </h1>
-            <p className="font-normal text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl text-base lg:text-right">
+            <p className="font-normal cursor-default text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl text-base lg:text-right">
               Hirely is a platform where candidates can get hired by the
               recruiters from different upcoming starups.
             </p>
@@ -215,12 +215,12 @@ const Projects = () => {
             data-scroll-speed="3"
             className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 "
           >
-            <h1 className="hidden-text font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+            <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
               <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
                 <div className="content-line-inner">Easy Staff</div>
               </div>
             </h1>
-            <p className="font-normal text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl text-base">
+            <p className="font-normal cursor-default text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl text-base">
               Easy Staff allows you to manage your staff's attendance, salary
               and payments in few clicks.
             </p>
@@ -283,12 +283,12 @@ const Projects = () => {
             data-scroll-speed="3"
             className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3"
           >
-            <h1 className="hidden-text font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
+            <h1 className="hidden-text cursor-default font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
               <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
                 <div className="content-line-inner">Sigma Rules</div>
               </div>
             </h1>
-            <p className="font-normal text-white/90 xl:text-2xl sm:text-xl 2xl:text-3xl text-base lg:text-right">
+            <p className="font-normal cursor-default text-white/90 xl:text-2xl sm:text-xl 2xl:text-3xl text-base lg:text-right">
               Sigma Rules is a webapp that allows users to create new sigma
               rules which can be read by everyone globally.
             </p>

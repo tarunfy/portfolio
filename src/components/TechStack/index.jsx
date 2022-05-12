@@ -292,21 +292,36 @@ const TechStack = () => {
       data-scroll-section
       className="h-[calc(100vh_+_20rem)] w-full bg-[#420fe7] relative"
     >
-      <img src={react} alt="tech" id="react-img" className=" h-28 w-28" />
-      <img src={tailwind} alt="tech" id="tailwind-img" className=" h-28 w-28" />
-      <img src={js} alt="tech" id="js-img" className="h-28 w-28" />
-      <img src={firebase} alt="tech" id="firebase-img" className="h-28 w-28" />
-      <img src={figma} alt="tech" id="figma-img" className="h-28 w-28" />
-      <img src={node} alt="tech" id="node-img" className="h-28 w-28" />
-      <img src={mongo} alt="tech" id="mongo-img" className="h-28 w-28" />
-      <img src={postman} alt="tech" id="postman-img" className="h-28 w-28" />
-      <img src={mui} alt="tech" id="next-img" className="h-28 w-28" />
-      <img src={css} alt="tech" id="css-img" className="h-28 w-28" />
-      <img src={html} alt="tech" id="html-img" className="h-28 w-28" />
-      <img src={sass} alt="tech" id="sass-img" className="h-28 w-28" />
+      <img src={react} alt="tech" id="react-img" className="tech h-28 w-28" />
+      <img
+        src={tailwind}
+        alt="tech"
+        id="tailwind-img"
+        className="tech h-28 w-28"
+      />
+      <img src={js} alt="tech" id="js-img" className="tech h-28 w-28" />
+      <img
+        src={firebase}
+        alt="tech"
+        id="firebase-img"
+        className="tech h-28 w-28"
+      />
+      <img src={figma} alt="tech" id="figma-img" className="tech h-28 w-28" />
+      <img src={node} alt="tech" id="node-img" className="tech h-28 w-28" />
+      <img src={mongo} alt="tech" id="mongo-img" className="tech h-28 w-28" />
+      <img
+        src={postman}
+        alt="tech"
+        id="postman-img"
+        className="tech h-28 w-28"
+      />
+      <img src={mui} alt="tech" id="next-img" className="tech h-28 w-28" />
+      <img src={css} alt="tech" id="css-img" className="tech h-28 w-28" />
+      <img src={html} alt="tech" id="html-img" className="tech h-28 w-28" />
+      <img src={sass} alt="tech" id="sass-img" className="tech h-28 w-28" />
 
       <h1
-        className="text-9xl absolute text-center bottom-0  text-white/60"
+        className="text-9xl cursor-default absolute text-center bottom-0  text-white/60"
         id="tech-title"
       >
         Languages, Frameworks & Tools
