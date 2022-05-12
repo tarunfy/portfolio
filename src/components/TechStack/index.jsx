@@ -23,137 +23,150 @@ const TechStack = () => {
         .timeline({
           scrollTrigger: {
             trigger: container,
-            start: "top bottom",
-            end: "top top",
+            start: "top top",
+            end: "bottom top",
+            toggleActions: "play none resume pause",
+            scrub: true,
+            pin: true,
+          },
+        })
+        .from(container.children[0], {
+          opacity: 0,
+          rotation: 270,
+          top: "-110vh",
+          left: "-400px",
+          duration: 2,
+          ease: "power4.inOut",
+        })
+        .from(
+          container.children[1],
+          {
+            opacity: 0,
+            rotation: 210,
+            top: "-60vh",
+            left: "-350px",
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .from(
+          container.children[2],
+          {
+            opacity: 0,
+            rotation: 175,
+            top: "60vh",
+            right: "-110vw",
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .from(
+          container.children[3],
+          {
+            opacity: 0,
+            rotation: 286,
+            bottom: "100px",
+            right: "-40px",
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .from(
+          container.children[4],
+          {
+            opacity: 0,
+            rotation: 180,
+            bottom: "-100px",
+            left: "-40px",
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .from(
+          container.children[5],
+          {
+            opacity: 0,
+            rotation: 45,
+            top: "-100px",
+            right: "-40px",
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .from(
+          container.children[6],
+          {
+            opacity: 0,
+            rotation: 12,
+            top: "-20px",
+            right: "-10px",
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .from(
+          container.children[7],
+          {
+            opacity: 0,
+            rotation: 55,
+            bottom: "-60px",
+            right: "-20px",
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .from(
+          container.children[8],
+          {
+            opacity: 0,
+            rotation: 180,
+            top: "-200px",
+            right: "-60px",
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .from(
+          container.children[9],
+          {
+            opacity: 0,
+            rotation: 155,
+            top: -50,
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        );
+      const tl2 = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: container,
+            start: "80% 78%",
+            end: "bottom 70%",
             toggleActions: "play none resume pause",
             scrub: true,
           },
         })
-        .to(container.children[0], {
-          opacity: 1,
-          rotation: 10,
-          top: 260,
-          left: 300,
-          duration: 2,
-          ease: "power4.inOut",
-        })
-        .to(
-          container.children[1],
+        .fromTo(
+          "#techstack-title",
           {
-            opacity: 1,
-            rotation: -10,
-            top: 360,
-            left: 400,
-            duration: 2,
-            ease: "power4.inOut",
+            bottom: "-100px",
+            opacity: 0,
           },
-          0.4
-        )
-        .to(
-          container.children[2],
           {
+            bottom: "40px",
             opacity: 1,
-            rotation: 0,
-            top: 450,
-            left: 600,
-            duration: 2,
             ease: "power4.inOut",
-          },
-          0.4
-        )
-        .to(
-          container.children[3],
-          {
-            opacity: 1,
-            rotation: -50,
-            bottom: 900,
-            right: 800,
-            duration: 2,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .to(
-          container.children[4],
-          {
-            opacity: 1,
-            rotation: 45,
-            bottom: 500,
-            left: 280,
-            duration: 2,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .to(
-          container.children[5],
-          {
-            opacity: 1,
-            rotation: -300,
-            top: 500,
-            right: 380,
-            duration: 2,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .to(
-          container.children[6],
-          {
-            opacity: 1,
-            rotation: -48,
-            top: 300,
-            right: 580,
-            duration: 2,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .to(
-          container.children[7],
-          {
-            opacity: 1,
-            rotation: 48,
-            bottom: 440,
-            right: 620,
-            duration: 2,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .to(
-          container.children[8],
-          {
-            opacity: 1,
-            rotation: 18,
-            top: 240,
-            right: 420,
-            duration: 2,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .to(
-          container.children[9],
-          {
-            opacity: 1,
-            rotation: 18,
-            top: 140,
-            right: 620,
-            duration: 2,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .to(
-          container.children[10],
-          {
-            opacity: 1,
-            bottom: 40,
-            duration: 2,
-            ease: "power4.inOut",
-          },
-          0.4
+            duration: 1.4,
+          }
         );
     });
   });
@@ -167,66 +180,66 @@ const TechStack = () => {
         src={react}
         alt="tech"
         id="react-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:top-[-110vh] xl:left-[-400px] opacity-0 rotate-[270deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:top-[260px] xl:left-[300px] opacity-1 rotate-[10deg]"
       />
       <img
         src={tailwind}
         alt="tech"
         id="tailwind-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute top-[-60vh] left-[-350px] opacity-0 rotate-[210deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:top-[360px] xl:left-[400px] opacity-1 rotate-[-10deg]"
       />
       <img
         src={js}
         alt="tech"
         id="js-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute top-[60vh] right-[-110vw] opacity-0 rotate-[175deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:top-[420px] xl:right-[750px] opacity-1 rotate-[4deg]"
       />
       <img
         src={firebase}
         alt="tech"
         id="firebase-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-40px] bottom-[100px] opacity-0 rotate-[286deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:right-[800px] xl:bottom-[900px] opacity-1 rotate-[-50deg]"
       />
       <img
         src={figma}
         alt="tech"
         id="figma-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute left-[-40px] bottom-[-100px] opacity-0 rotate-180"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:left-[280px] xl:bottom-[500px] opacity-1 rotate-45"
       />
       <img
         src={node}
         alt="tech"
         id="node-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-40px] top-[-100px] opacity-0 rotate-45"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:right-[380px] xl:top-[500px] opacity-1 rotate-[-300deg]"
       />
       <img
         src={mongo}
         alt="tech"
         id="mongo-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-10px] top-[-20px] opacity-0 rotate-12"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:right-[580px] xl:top-[300px] opacity-1 rotate-[-48deg]"
       />
       <img
         src={postman}
         alt="tech"
         id="postman-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:w-24 xl:h-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-20px] bottom-[-60px] opacity-0 rotate-[55deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:w-24 xl:h-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:right-[720px] xl:bottom-[440px] opacity-1 rotate-[48deg]"
       />
       <img
         src={mui}
         alt="tech"
         id="next-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-60px] top-[-200px] opacity-0 rotate-[180deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:right-[420px] xl:top-[240px] opacity-1 rotate-[18deg]"
       />
       <img
         src={git}
         alt="tech"
         id="css-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute  top-[-50px] opacity-0 rotate-[155deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute  xl:top-[140px] xl:right-[620px] opacity-1 rotate-[18deg]"
       />
 
       <h1
-        className="2xl:text-9xl xl:text-[7rem] cursor-default absolute  bottom-[-100px] opacity-0 text-center  text-white/60"
-        id="tech-title"
+        className="2xl:text-9xl xl:text-[7rem] cursor-default absolute text-center  text-white/60"
+        id="techstack-title"
       >
         Languages, Frameworks & Tools
       </h1>
