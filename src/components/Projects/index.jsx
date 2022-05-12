@@ -28,7 +28,6 @@ const Projects = () => {
               trigger: container,
               start: "top 65%",
               end: "top top",
-              scroller: "#main-container",
               toggleActions: "play none resume pause",
             },
           })
@@ -86,27 +85,18 @@ const Projects = () => {
   return (
     <div
       className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 "
-      data-scroll-section
       id="projects"
     >
       <h1
-        data-scroll
-        data-scroll-delay="0.1"
-        data-scroll-speed="4"
-        className="text-white/70 z-40 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.4rem] lg:text-[7.5rem] xl:text-[9.2rem] 2xl:text-[10.8rem]  text-[3.5rem] leading-[3.5rem] sm:leading-[5.5rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
+        className="text-white/70 z-40 mb-32 vvs:text-[4rem] sm:text-[5.2rem] md:text-[6.4rem] lg:text-[7.5rem] xl:text-[9.2rem] 2xl:text-[10.8rem]  text-[3.5rem] leading-[3.5rem] sm:leading-[5.5rem] md:leading-[6rem] lg:leading-[7rem] xl:leading-[9rem] 2xl:leading-[10rem]  cursor-default"
         id="project-heading"
       >
         Featured Projects
       </h1>
-      <div className="space-y-5 sm:space-y-10 xl:space-y-16 z-30">
+      <div className="space-y-5 sm:space-y-10 xl:space-y-[35vh] z-30">
         {/* Hirely */}
         <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div
-            data-scroll
-            data-scroll-delay="0.1"
-            data-scroll-speed="3"
-            className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 "
-          >
+          <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
             <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
               <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
                 <div className="content-line-inner">Hirely</div>
@@ -138,12 +128,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div
-            data-scroll
-            data-scroll-delay="0.1"
-            data-scroll-speed="3"
-            className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper"
-          >
+          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
             <img
               src={hirely}
               alt="project image"
@@ -155,12 +140,7 @@ const Projects = () => {
 
         {/* Formify */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div
-            data-scroll
-            data-scroll-delay="0.1"
-            data-scroll-speed="3"
-            className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper"
-          >
+          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
             <img
               src={formify}
               alt="project image"
@@ -169,12 +149,7 @@ const Projects = () => {
             <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
           </div>
 
-          <div
-            data-scroll
-            data-scroll-delay="0.1"
-            data-scroll-speed="3"
-            className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3"
-          >
+          <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
             <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
               <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
                 <div className="content-line-inner">Formify</div>
@@ -209,12 +184,7 @@ const Projects = () => {
 
         {/* Easy Staff */}
         <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div
-            data-scroll
-            data-scroll-delay="0.1"
-            data-scroll-speed="3"
-            className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 "
-          >
+          <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
             <h1 className="hidden-text font-bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
               <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
                 <div className="content-line-inner">Easy Staff</div>
@@ -246,12 +216,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div
-            data-scroll
-            data-scroll-delay="0.1"
-            data-scroll-speed="3"
-            className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper"
-          >
+          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
             <img
               src={easyStaff}
               alt="project image"
@@ -263,12 +228,7 @@ const Projects = () => {
 
         {/* Sigma Rules */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
-          <div
-            data-scroll
-            data-scroll-delay="0.1"
-            data-scroll-speed="3"
-            className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper"
-          >
+          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
             <img
               src={sigmaRules}
               alt="project image"
@@ -277,12 +237,7 @@ const Projects = () => {
             <div className="img-container absolute top-0 right-0 bg-[#420fe7] w-full h-full"></div>
           </div>
 
-          <div
-            data-scroll
-            data-scroll-delay="0.1"
-            data-scroll-speed="3"
-            className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3"
-          >
+          <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
             <h1 className="hidden-text cursor-default font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl">
               <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
                 <div className="content-line-inner">Sigma Rules</div>

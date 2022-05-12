@@ -10,9 +10,7 @@ import node from "../../assets/images/node.svg";
 import figma from "../../assets/images/figma.svg";
 import mui from "../../assets/images/mui.svg";
 import js from "../../assets/images/js.svg";
-import css from "../../assets/images/css.svg";
-import html from "../../assets/images/html.svg";
-import sass from "../../assets/images/sass.svg";
+import git from "../../assets/images/git.svg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,263 +23,137 @@ const TechStack = () => {
         .timeline({
           scrollTrigger: {
             trigger: container,
-            start: "+=50px bottom",
-            end: "center top",
-            scroller: "#main-container",
+            start: "top bottom",
+            end: "top top",
             toggleActions: "play none resume pause",
             scrub: true,
           },
         })
-        .fromTo(
-          container.children[0],
-          {
-            opacity: 0,
-            rotation: -270,
-            y: -100,
-            x: -10,
-          },
-
-          {
-            opacity: 1,
-            rotation: 0,
-            duration: 2.2,
-            y: 300,
-            x: 300,
-            ease: "power4.inOut",
-          }
-        )
-        .fromTo(
+        .to(container.children[0], {
+          opacity: 1,
+          rotation: 10,
+          top: 260,
+          left: 300,
+          duration: 2,
+          ease: "power4.inOut",
+        })
+        .to(
           container.children[1],
-          {
-            opacity: 0,
-            rotation: -180,
-            y: "80vh",
-            x: "-20vw",
-          },
-
-          {
-            opacity: 1,
-            rotation: 4,
-            duration: 2,
-            y: 400,
-            x: 400,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .fromTo(
-          container.children[2],
-          {
-            opacity: 0,
-            rotation: 180,
-            y: "110vh",
-            x: "120vw",
-          },
-
-          {
-            opacity: 1,
-            rotation: -22,
-            duration: 2,
-            y: 150,
-            x: 700,
-            ease: "power4.inOut",
-          },
-          0.4
-        )
-        .fromTo(
-          container.children[3],
-          {
-            opacity: 0,
-            rotation: -290,
-            y: "-110vh",
-            x: "120vw",
-          },
-
           {
             opacity: 1,
             rotation: -10,
+            top: 360,
+            left: 400,
             duration: 2,
-            y: 0,
-            x: "77vw",
             ease: "power4.inOut",
           },
           0.4
         )
-        .fromTo(
+        .to(
+          container.children[2],
+          {
+            opacity: 1,
+            rotation: 0,
+            top: 450,
+            left: 600,
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .to(
+          container.children[3],
+          {
+            opacity: 1,
+            rotation: -50,
+            bottom: 900,
+            right: 800,
+            duration: 2,
+            ease: "power4.inOut",
+          },
+          0.4
+        )
+        .to(
           container.children[4],
           {
-            opacity: 0,
-            rotation: 300,
-            y: "130vh",
-            x: "70vw",
-          },
-
-          {
             opacity: 1,
-            rotation: -13,
+            rotation: 45,
+            bottom: 500,
+            left: 280,
             duration: 2,
-            y: 90,
-            x: 200,
             ease: "power4.inOut",
           },
           0.4
         )
-        .fromTo(
+        .to(
           container.children[5],
           {
-            opacity: 0,
-            rotation: -90,
-            y: "100vh",
-            x: "10vw",
-          },
-
-          {
             opacity: 1,
-            rotation: -18,
+            rotation: -300,
+            top: 500,
+            right: 380,
             duration: 2,
-            y: 10,
-            x: "58vw",
             ease: "power4.inOut",
           },
           0.4
         )
-        .fromTo(
+        .to(
           container.children[6],
           {
-            opacity: 0,
-            rotation: -360,
-            y: "-140vh",
-            x: "70vw",
-          },
-
-          {
             opacity: 1,
-            rotation: 9,
+            rotation: -48,
+            top: 300,
+            right: 580,
             duration: 2,
-            y: -500,
-            x: "44vw",
             ease: "power4.inOut",
           },
           0.4
         )
-        .fromTo(
+        .to(
           container.children[7],
           {
-            opacity: 0,
-            rotation: 260,
-            y: "-125vh",
-            x: "30vw",
-            scale: 1,
-          },
-
-          {
             opacity: 1,
-            rotation: -12,
+            rotation: 48,
+            bottom: 440,
+            right: 620,
             duration: 2,
-            scale: 0.9,
-            y: -650,
-            x: "27vw",
             ease: "power4.inOut",
           },
           0.4
         )
-        .fromTo(
+        .to(
           container.children[8],
           {
-            opacity: 0,
-            rotation: -234,
-            y: "125vh",
-            x: "70vw",
-            scale: 1,
-          },
-
-          {
             opacity: 1,
-            rotation: 10,
+            rotation: 18,
+            top: 240,
+            right: 420,
             duration: 2,
-            scale: 0.9,
-            y: -750,
-            x: "63vw",
             ease: "power4.inOut",
           },
           0.4
         )
-        .fromTo(
+        .to(
           container.children[9],
           {
-            opacity: 0,
-            rotation: 174,
-            y: "104vh",
-            x: "8vw",
-            scale: 1,
-          },
-
-          {
             opacity: 1,
-            rotation: -40,
+            rotation: 18,
+            top: 140,
+            right: 620,
             duration: 2,
-            scale: 0.7,
-            y: -800,
-            x: "12vw",
             ease: "power4.inOut",
           },
-          0.2
+          0.4
         )
-        .fromTo(
+        .to(
           container.children[10],
           {
-            opacity: 0,
-            rotation: 174,
-            y: "110vh",
-            x: "-120vw",
-            scale: 1,
-          },
-
-          {
             opacity: 1,
-            rotation: 20,
+            bottom: 40,
             duration: 2,
-            scale: 0.7,
-            y: -600,
-            x: "80vw",
             ease: "power4.inOut",
           },
-          0.2
-        )
-        .fromTo(
-          container.children[11],
-          {
-            opacity: 0,
-            rotation: -294,
-            y: "110vh",
-            x: "-120vw",
-            scale: 1,
-          },
-
-          {
-            opacity: 1,
-            rotation: 20,
-            duration: 2,
-            scale: 0.9,
-            y: -600,
-            x: "40vw",
-            ease: "power4.inOut",
-          },
-          0.2
-        )
-        .fromTo(
-          container.children[12],
-          {
-            opacity: 0,
-            y: 20,
-          },
-
-          {
-            opacity: 1,
-            duration: 2,
-            y: -130,
-            ease: "power4.inOut",
-          }
+          0.4
         );
     });
   });
@@ -289,39 +161,71 @@ const TechStack = () => {
   return (
     <div
       id="tech-stack"
-      data-scroll-section
-      className="h-[calc(100vh_+_20rem)] w-full bg-[#420fe7] relative"
+      className="h-[calc(100vh_+_20rem)] w-full bg-[#420fe7] relative overflow-hidden"
     >
-      <img src={react} alt="tech" id="react-img" className="tech h-28 w-28" />
+      <img
+        src={react}
+        alt="tech"
+        id="react-img"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute xl:top-[-110vh] xl:left-[-400px] opacity-0 rotate-[270deg]"
+      />
       <img
         src={tailwind}
         alt="tech"
         id="tailwind-img"
-        className="tech h-28 w-28"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute top-[-60vh] left-[-350px] opacity-0 rotate-[210deg]"
       />
-      <img src={js} alt="tech" id="js-img" className="tech h-28 w-28" />
+      <img
+        src={js}
+        alt="tech"
+        id="js-img"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute top-[60vh] right-[-110vw] opacity-0 rotate-[175deg]"
+      />
       <img
         src={firebase}
         alt="tech"
         id="firebase-img"
-        className="tech h-28 w-28"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-40px] bottom-[100px] opacity-0 rotate-[286deg]"
       />
-      <img src={figma} alt="tech" id="figma-img" className="tech h-28 w-28" />
-      <img src={node} alt="tech" id="node-img" className="tech h-28 w-28" />
-      <img src={mongo} alt="tech" id="mongo-img" className="tech h-28 w-28" />
+      <img
+        src={figma}
+        alt="tech"
+        id="figma-img"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute left-[-40px] bottom-[-100px] opacity-0 rotate-180"
+      />
+      <img
+        src={node}
+        alt="tech"
+        id="node-img"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-40px] top-[-100px] opacity-0 rotate-45"
+      />
+      <img
+        src={mongo}
+        alt="tech"
+        id="mongo-img"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-10px] top-[-20px] opacity-0 rotate-12"
+      />
       <img
         src={postman}
         alt="tech"
         id="postman-img"
-        className="tech h-28 w-28"
+        className="tech 2xl:h-28 2xl:w-28 xl:w-24 xl:h-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-20px] bottom-[-60px] opacity-0 rotate-[55deg]"
       />
-      <img src={mui} alt="tech" id="next-img" className="tech h-28 w-28" />
-      <img src={css} alt="tech" id="css-img" className="tech h-28 w-28" />
-      <img src={html} alt="tech" id="html-img" className="tech h-28 w-28" />
-      <img src={sass} alt="tech" id="sass-img" className="tech h-28 w-28" />
+      <img
+        src={mui}
+        alt="tech"
+        id="next-img"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute right-[-60px] top-[-200px] opacity-0 rotate-[180deg]"
+      />
+      <img
+        src={git}
+        alt="tech"
+        id="css-img"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-16 md:w-16 sm:h-12 sm:w-12 vvs:h-9 vvs:w-9 w-8 h-8 absolute  top-[-50px] opacity-0 rotate-[155deg]"
+      />
 
       <h1
-        className="text-9xl cursor-default absolute text-center bottom-0  text-white/60"
+        className="2xl:text-9xl xl:text-[7rem] cursor-default absolute  bottom-[-100px] opacity-0 text-center  text-white/60"
         id="tech-title"
       >
         Languages, Frameworks & Tools
