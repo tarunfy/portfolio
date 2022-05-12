@@ -85,7 +85,7 @@ const Projects = () => {
 
   return (
     <div
-      className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 bg-[#420fe7]"
+      className="w-full  pb-40 xl:px-44 lg:px-36 md:px-32 sm:px-28 vvs:px-12 px-10 "
       data-scroll-section
       id="projects"
     >

@@ -37,6 +37,10 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  html,body{
+    background-color: #420fe7;
+  }
+
   .img{
     will-change: scale;
   }
@@ -106,10 +110,6 @@
   font-family: 'Glimer-Bold', sans-serif;
 }
 
-}
-
-
-
 .css-ja5taz-MuiTooltip-tooltip{
   background-color: #222 !important;
   color: white !important;
@@ -124,6 +124,31 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 .MuiTooltip-popper[data-popper-placement*="right"] .css-ja5taz-MuiTooltip-tooltip{
 transform: translateY(-20px) !important;
 }
+
+}
+
+#tech-stack::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(hsla(0,0%,100%,0),#4613e6 60%);
+}
+
+#tech-stack{
+  background: url(./assets/images/lines.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#projects{
+  background: linear-gradient(0deg, rgba(70,19,230,1) 0%, rgba(66,15,231,1) 40%);
+}
+
+
 
 html.has-scroll-smooth {
     overflow: hidden; }
