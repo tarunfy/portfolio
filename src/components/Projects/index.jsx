@@ -130,8 +130,8 @@ const Projects = () => {
               </div>
             </h1>
             <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-2xl sm:text-xl 2xl:text-3xl vvs:text-base text-sm">
-              The fastest and the easiest way to create forms and collect
-              submissions on the internet.
+              Hirely is a platform where candidates can get hired by the
+              recruiters from different upcoming starups.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center">
               <div className="github-btn">
@@ -183,8 +183,8 @@ const Projects = () => {
               </div>
             </h1>
             <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm lg:text-right">
-              Hirely is a platform where candidates can get hired by the
-              recruiters from different upcoming starups.
+              The fastest and the easiest way to create forms and collect
+              submissions on the internet.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
               <div className="github-btn">
