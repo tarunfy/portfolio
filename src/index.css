@@ -103,6 +103,17 @@ transform: translateY(-20px) !important;
   background-image: radial-gradient(hsla(0,0%,100%,0),#4613e6 60%);
 }
 
+#tech-stack::after{
+  z-index: -10;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: radial-gradient(hsla(0,0%,100%,0),#4613e6 96%);
+}
+
 
 #tech-stack{
   background: url(./assets/images/lines.svg);

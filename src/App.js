@@ -7,13 +7,11 @@ import TechStack from "./components/TechStack";
 function App() {
   return (
     <>
-      <div id="main-container">
-        <CustomCursor />
-        <Hero />
-        <Projects />
-        <TechStack />
-        <Contact />
-      </div>
+      <CustomCursor />
+      <Hero />
+      <Projects />
+      <TechStack />
+      <Contact />
     </>
   );
 }
