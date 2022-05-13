@@ -137,15 +137,30 @@ transform: translateY(-20px) !important;
   background-image: radial-gradient(hsla(0,0%,100%,0),#4613e6 60%);
 }
 
+
 #tech-stack{
   background: url(./assets/images/lines.svg);
-  background-position: center;
+  background-position: right;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
+}
+
+
+@media screen and (min-width: 1280px) {
+  #tech-stack{
+    background: url(./assets/images/lines.svg);
+    background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  }
 }
 
 #projects{
-  background: linear-gradient(0deg, rgba(70,19,230,1) 0%, rgba(66,15,231,1) 40%);
+  background: linear-gradient(0deg, rgba(70,19,230,1) 0%, #420FE7 90%);
+}
+
+#contact-section{
+  background: linear-gradient(0deg,  #420FE7 0%, rgba(70,19,230,1)  95%);
 }
 
 
