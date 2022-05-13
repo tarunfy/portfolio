@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { BsFileEarmarkPdf, BsGithub } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
+import resume from "../../assets/file/resume.pdf";
 
 const Contact = () => {
   useEffect(() => {
@@ -99,12 +100,14 @@ const Contact = () => {
           .
         </p>
 
-        <button
-          id="download-btn"
-          className="text-white lg:w-fit hover:bg-[#18033C] transition-colors duration-300 ease-in-out font-Glimer-Bold font-medium border-[1px] focus:outline-none flex items-center justify-center border-white/50 py-3 px-6 text-lg xl:text-xl 2xl:text-2xl my-10 w-full"
-        >
-          <BsFileEarmarkPdf className="mr-2" /> Download Resume
-        </button>
+        <a href={resume} download={resume}>
+          <button
+            id="download-btn"
+            className="text-white lg:w-fit hover:bg-[#18033C] transition-colors duration-300 ease-in-out font-Glimer-Bold font-medium border-[1px] focus:outline-none flex items-center justify-center border-white/50 py-3 px-6 text-lg xl:text-xl 2xl:text-2xl my-10 w-full"
+          >
+            <BsFileEarmarkPdf className="mr-2" /> Download Resume
+          </button>
+        </a>
       </div>
 
       <div className="flex flex-col py-2 mb-5 w-full space-y-6 items-center justify-center">
