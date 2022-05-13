@@ -172,43 +172,43 @@ const TechStack = () => {
         src={react}
         alt="tech"
         id="react-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24 lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[260px] 2xl:left-[300px]  1xl:top-[240px] 1xl:left-[300px]  xl:top-[260px] xl:left-[300px] lg:top-[200px] lg:left-[290px] md:top-[200px] md:left-[200px] sm:top-[300px] sm:left-[180px] vvs:top-[300px] vvs:left-[120px] top-[340px] left-[60px]  opacity-1 rotate-[10deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24 lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[260px] 2xl:left-[300px]  1xl:top-[240px] 1xl:left-[300px] 1/2xl:top-[220px] 1/2xl:left-[300px]   xl:top-[260px] xl:left-[300px] lg:top-[200px] lg:left-[290px] md:top-[200px] md:left-[200px] sm:top-[300px] sm:left-[180px] vvs:top-[300px] vvs:left-[120px] top-[340px] left-[60px]  opacity-1 rotate-[10deg]"
       />
       <img
         src={tailwind}
         alt="tech"
         id="tailwind-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[460px] 2xl:left-[400px] 1xl:top-[400px] 1xl:left-[350px] xl:top-[420px] xl:left-[360px] lg:top-[360px] lg:left-[320px] md:top-[340px] md:left-[230px] sm:top-[440px] sm:left-[100px] vvs:top-[440px] vvs:left-[40px] top-[490px] left-[40px] opacity-1 rotate-[-10deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[460px] 2xl:left-[400px] 1xl:top-[400px] 1xl:left-[350px] 1/2xl:top-[400px] 1/2xl:left-[360px] xl:top-[420px] xl:left-[360px] lg:top-[360px] lg:left-[320px] md:top-[340px] md:left-[230px] sm:top-[440px] sm:left-[100px] vvs:top-[440px] vvs:left-[40px] top-[490px] left-[40px] opacity-1 rotate-[-10deg]"
       />
       <img
         src={js}
         alt="tech"
         id="js-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[420px] 2xl:right-[750px] 1xl:top-[400px] 1xl:right-[750px] xl:top-[510px] xl:right-[650px] lg:top-[410px] lg:right-[450px] md:top-[450px] md:right-[350px] sm:top-[450px] sm:right-[350px] vvs:top-[490px] vvs:right-[150px] top-[430px] right-[150px] opacity-1 rotate-[4deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:top-[420px] 2xl:right-[750px] 1xl:top-[400px] 1xl:right-[750px] 1/2xl:top-[270px] 1/2xl:right-[680px] xl:top-[510px] xl:right-[650px] lg:top-[410px] lg:right-[450px] md:top-[450px] md:right-[350px] sm:top-[450px] sm:right-[350px] vvs:top-[490px] vvs:right-[150px] top-[430px] right-[150px] opacity-1 rotate-[4deg]"
       />
       <img
         src={firebase}
         alt="tech"
         id="firebase-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[880px] 2xl:bottom-[950px] 1xl:right-[690px] 1xl:bottom-[850px] xl:right-[680px] xl:bottom-[950px] lg:right-[480px] lg:bottom-[860px] md:right-[340px] md:bottom-[820px] sm:right-[340px] sm:bottom-[820px] vvs:right-[100px] vvs:bottom-[700px] right-[100px] bottom-[710px] opacity-1 rotate-[-50deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[880px] 2xl:bottom-[950px] 1xl:right-[690px] 1xl:bottom-[850px] 1/2xl:right-[680px] 1/2xl:bottom-[950px] xl:right-[680px] xl:bottom-[950px] lg:right-[480px] lg:bottom-[860px] md:right-[340px] md:bottom-[820px] sm:right-[340px] sm:bottom-[820px] vvs:right-[100px] vvs:bottom-[700px] right-[100px] bottom-[710px] opacity-1 rotate-[-50deg]"
       />
       <img
         src={figma}
         alt="tech"
         id="figma-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:left-[280px] 2xl:bottom-[540px] 1xl:left-[290px] 1xl:bottom-[480px] xl:left-[280px] xl:bottom-[480px] lg:left-[280px] lg:bottom-[420px] md:left-[240px] md:bottom-[420px] sm:left-[140px] sm:bottom-[420px] vvs:left-[40px] vvs:bottom-[400px] left-[40px] bottom-[400px] opacity-1 rotate-45"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:left-[280px] 2xl:bottom-[540px] 1xl:left-[290px] 1xl:bottom-[480px] 1/2xl:left-[280px] 1/2xl:bottom-[450px] xl:left-[280px] xl:bottom-[480px] lg:left-[280px] lg:bottom-[420px] md:left-[240px] md:bottom-[420px] sm:left-[140px] sm:bottom-[420px] vvs:left-[40px] vvs:bottom-[400px] left-[40px] bottom-[400px] opacity-1 rotate-45"
       />
       <img
         src={node}
         alt="tech"
         id="node-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[380px] 2xl:top-[550px] 1xl:right-[390px] 1xl:top-[580px] xl:right-[380px] xl:top-[600px] lg:right-[320px] lg:top-[550px] md:right-[220px] md:top-[600px] sm:right-[250px] sm:top-[600px] vvs:right-[50px] vvs:top-[600px] right-[50px] top-[550px] opacity-1 rotate-[-300deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[380px] 2xl:top-[550px] 1xl:right-[390px] 1xl:top-[580px] 1/2xl:right-[380px] 1/2xl:top-[600px] xl:right-[380px] xl:top-[600px] lg:right-[320px] lg:top-[550px] md:right-[220px] md:top-[600px] sm:right-[250px] sm:top-[600px] vvs:right-[50px] vvs:top-[600px] right-[50px] top-[550px] opacity-1 rotate-[-300deg]"
       />
       <img
         src={mongo}
         alt="tech"
         id="mongo-img"
-        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[620px] 2xl:top-[350px] xl:right-[520px] xl:top-[350px] lg:right-[400px] lg:top-[250px] md:right-[280px] md:top-[300px] sm:right-[280px] sm:top-[300px] vvs:right-[80px] vvs:top-[200px] right-[80px] top-[220px] opacity-1 rotate-[-48deg]"
+        className="tech 2xl:h-28 2xl:w-28 xl:h-24 xl:w-24  lg:h-20 lg:w-20 md:h-20 md:w-20 sm:h-16 sm:w-16 vvs:h-14 vvs:w-14 w-12 h-12 absolute 2xl:right-[620px] 2xl:top-[350px]  xl:right-[520px] xl:top-[350px] lg:right-[400px] lg:top-[250px] md:right-[280px] md:top-[300px] sm:right-[280px] sm:top-[300px] vvs:right-[80px] vvs:top-[200px] right-[80px] top-[220px] opacity-1 rotate-[-48deg]"
       />
       <img
         src={postman}
