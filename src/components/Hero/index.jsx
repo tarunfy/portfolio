@@ -73,28 +73,19 @@ const Hero = () => {
 
           <div className="flex justify-between items-center space-x-2 ">
             <div className="h-[1px] md:w-10 sm:w-7 vvs:w-5 w-4 bg-white"></div>
-            <p
-              className="text-white hover:text-[#EEA1BE] transition-colors duration-300 ease-in-out capitalize vss:text-sm md:text-base xl:text-lg text-xs"
-              id="work-status"
-            >
+            <p className="text-white font-Glimer-Medium font-medium hover:text-[#EEA1BE] transition-colors duration-300 ease-in-out capitalize vss:text-sm md:text-base xl:text-lg text-xs">
               Available for work
             </p>
           </div>
         </motion.div>
 
         <div>
-          <div className="my-10">
-            <h1
-              className="text-white/70  !z-10 2xl:text-[6.5rem] xl:text-[6.2rem] lg:text-[5rem] md:text-[3.5rem] sm:text-[3rem] vvs:text-[2.3rem] text-[2.2rem] tracking-normal xl:leading-[120px] md:leading-[80px] lg:leading-[100px] sm:leading-[80px] vvs:leading-[60px] leading-[40px]"
-              id="hero-title"
-            >
+          <div className="mt-10 mb-8">
+            <h1 className="text-white/70 font-Glimer-Outlined !z-10 2xl:text-[6.5rem] xl:text-[6.2rem] lg:text-[5rem] md:text-[3.5rem] sm:text-[3rem] vvs:text-[2.3rem] text-[2.2rem] tracking-normal xl:leading-[120px] md:leading-[80px] lg:leading-[100px] sm:leading-[80px] vvs:leading-[60px] leading-[40px]">
               <AnimatedLetters letters={title} />
             </h1>
 
-            <h2
-              className=" text-white !z-10  2xl:text-[5.5rem] xl:text-[5rem] lg:text-[3.5rem] md:text-[2.6rem] sm:text-[2.2rem] vvs:text-[1.7rem] text-[1.5rem] tracking-normal 2xl:leading-[120px] lg:leading-[100px] md:leading-[70px] sm:leading-[50px] leading-[40px]"
-              id="sub-hero-title"
-            >
+            <h2 className=" text-white !z-10  font-Glimer-Bold font-extrabold  2xl:text-[5.5rem] xl:text-[5rem] lg:text-[3.5rem] md:text-[2.6rem] sm:text-[2.2rem] vvs:text-[1.5rem] text-[1.4rem] tracking-normal 2xl:leading-[120px] lg:leading-[100px] md:leading-[70px] sm:leading-[50px] leading-[33px]">
               <AnimatedLetters letters={letters} />
             </h2>
           </div>
@@ -106,10 +97,7 @@ const Hero = () => {
           >
             <div className="w-full flex md:flex-row flex-col justify-between items-center ">
               <div>
-                <p
-                  className=" text-white/50 xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-5 md:mb-0"
-                  id="about-me"
-                >
+                <p className=" text-white/60 font-Glimer-Light xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0">
                   Tarun Sharma is a 19 year old who develop webapps and turn
                   ideas into a functional and delightful experience. He is
                   focusing on working on backend stuff and imporving his

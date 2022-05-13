@@ -6,16 +6,24 @@ const CustomCursor = () => {
     gsap.delayedCall(1, () => {
       const bigBall = document.querySelector(".cursor__ball--big");
       const socialIcons = document.querySelectorAll(".social");
+      const footerIcons = document.querySelectorAll(".social-icon");
       const profilePhoto = document.getElementById("profilePhoto");
       const links = document.querySelectorAll(".link");
       const repoLinks = document.querySelectorAll(".repo");
       const techIcons = document.querySelectorAll(".tech");
+      const downloadBtn = document.getElementById("download-btn");
 
       // Listeners
       document.body.addEventListener("mousemove", onMouseMove);
+
       for (let i = 0; i < socialIcons.length; i++) {
         socialIcons[i].addEventListener("mouseenter", onMouseHover);
         socialIcons[i].addEventListener("mouseleave", onMouseHoverOut);
+      }
+
+      for (let i = 0; i < footerIcons.length; i++) {
+        footerIcons[i].addEventListener("mouseenter", linkMouseHover);
+        footerIcons[i].addEventListener("mouseleave", onMouseHoverOut);
       }
 
       for (let i = 0; i < links.length; i++) {
@@ -35,6 +43,9 @@ const CustomCursor = () => {
 
       profilePhoto.addEventListener("mouseenter", profileMouseHover);
       profilePhoto.addEventListener("mouseleave", onMouseHoverOut);
+
+      downloadBtn.addEventListener("mouseenter", profileMouseHover);
+      downloadBtn.addEventListener("mouseleave", onMouseHoverOut);
 
       // Move the cursor
       function onMouseMove(e) {

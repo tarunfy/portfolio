@@ -6,36 +6,37 @@
 @font-face {
   font-family: "Glimer-Outlined";
   src: url(./assets/Gilmer-Font/Gilmer\ Outline.otf);
-};
+}
+
 @font-face {
   font-family: "Glimer-Bold";
-  src: url(./assets/Gilmer-Font/Gilmer\ Bold.otf);
-};
+  src: url(./assets/Gilmer-Font/Gilmer\ Bold.woff);
+}
+
 @font-face {
   font-family: "Glimer-Heavy";
   src: url(./assets/Gilmer-Font/Gilmer\ Heavy.otf);
-};
+}
+
 @font-face {
   font-family: "Glimer-Light";
   src: url(./assets/Gilmer-Font/Gilmer\ Light.otf);
-};
+}
+
 @font-face {
   font-family: "Glimer-Medium";
   src: url(./assets/Gilmer-Font/Gilmer\ Medium.otf);
-};
+}
+
 @font-face {
   font-family: "Glimer-Regular";
   src: url(./assets/Gilmer-Font/Gilmer\ Regular.otf);
-};
+}
 
 
 
 @layer base{
-
-  html{
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+  
 
   html,body{
     background-color: #420fe7;
@@ -53,37 +54,7 @@
     will-change: visibility;
   }
 
-#hero-title{
-  font-family: 'Glimer-Outlined', sans-serif;
-  font-weight: 100;
-}
-#sub-hero-title{
-  font-family: 'Glimer-Heavy', sans-serif;
-  font-weight: 800;
-}
-#work-status{
-  font-family: 'Glimer-Light', sans-serif;
-  font-weight: 500;
-}
-#about-me{
-  font-family: 'Glimer-Light', sans-serif;
-  font-weight: 300;
-}
 
-#email{
-  font-family: 'Glimer-Bold', sans-serif;
-  font-weight: 600;
-}
-
-#project-heading{
-  font-family: 'Glimer-Outlined', sans-serif;
-  font-weight: 600;
-}
-
-#techstack-title{
-  font-family: 'Glimer-Outlined', sans-serif;
-  font-weight: 600;
-}
 
 .cursor {
   pointer-events: none;      
@@ -106,10 +77,7 @@
   background: #420fe7;
 }
 
-.text-container{
-  font-family: 'Glimer-Bold', sans-serif;
 }
-
 .css-ja5taz-MuiTooltip-tooltip{
   background-color: #222 !important;
   color: white !important;
@@ -123,8 +91,6 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 .MuiTooltip-popper[data-popper-placement*="right"] .css-ja5taz-MuiTooltip-tooltip{
 transform: translateY(-20px) !important;
-}
-
 }
 
 #tech-stack::before{
@@ -148,22 +114,19 @@ transform: translateY(-20px) !important;
 
 @media screen and (min-width: 1280px) {
   #tech-stack{
-    background: url(./assets/images/lines.svg);
-    background-position: center;
+  background: url(./assets/images/lines.svg);
+  background-position: center;
   background-size: cover;
   background-repeat: repeat;
-  }
 }
+}
+
 
 #projects{
   background: linear-gradient(0deg, rgba(70,19,230,1) 0%, #420FE7 90%);
 }
 
 #contact-section{
-  /* background: linear-gradient(0deg,  #420FE7 0%, rgba(70,19,230,1)  95%); */
+  background: linear-gradient(0deg,  #420FE7 0%, rgba(70,19,230,1)  95%);
 }
 
-
-
-html.has-scroll-smooth {
-    overflow: hidden; }

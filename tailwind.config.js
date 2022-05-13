@@ -2,6 +2,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        "Glimer-Outlined": ["Glimer-Outlined", "sans-serif"],
+        "Glimer-Bold": ["Glimer-Bold", "sans-serif"],
+        "Glimer-Heavy": ["Glimer-Heavy", "sans-serif"],
+        "Glimer-Light": ["Glimer-Light", "sans-serif"],
+        "Glimer-Medium": ["Glimer-Medium", "sans-serif"],
+        "Glimer-Regular": ["Glimer-Regular", "sans-serif"],
+      },
+
       boxShadow: {
         custom1: "rgba(0, 0, 0, 0.25) 0px 5px 15px",
       },
