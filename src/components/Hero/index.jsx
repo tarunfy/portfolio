@@ -98,11 +98,10 @@ const Hero = () => {
             <div className="w-full flex md:flex-row flex-col justify-between items-center ">
               <div>
                 <p className=" text-white/60 font-Glimer-Light xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0">
-                  Tarun Sharma is a 19 year old who develop webapps and turn
-                  ideas into a functional and delightful experience. He is
-                  focusing on working on backend stuff and imporving his
-                  frontend skills - mainly builds webapps & websites with clean
-                  UI.
+                  I am a 19 year old who develops webapps and turn ideas into a
+                  functional and delightful experience. I am focusing on working
+                  on backend stuff and imporving my frontend skills - mainly
+                  building webapps & websites with clean UI.
                 </p>
               </div>
 
