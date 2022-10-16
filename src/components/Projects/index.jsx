@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import hirely from "../../assets/images/Hirely.svg";
 import easyStaff from "../../assets/images/EasyStaff.svg";
 import formify from "../../assets/images/Formify.svg";
-import sigmaRules from "../../assets/images/SigmaRules.svg";
+import bloggy from "../../assets/images/Bloggy.svg";
+import planitio from "../../assets/images/Planitio.svg";
 import { BsGithub, BsArrowRight } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -253,11 +254,11 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Sigma Rules */}
+        {/* Planitio */}
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
             <img
-              src={sigmaRules}
+              src={planitio}
               alt="project image"
               className="absolute w-full object-cover h-full img"
             />
@@ -267,19 +268,19 @@ const Projects = () => {
           <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
             <h1 className="hidden-text cursor-default font-Glimer-Bold font-bold lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
               <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7] ">
-                <div className="content-line-inner">Sigma Rules</div>
+                <div className="content-line-inner">Planit.io</div>
               </div>
             </h1>
             <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-2xl sm:text-xl 2xl:text-3xl vvs:text-base text-sm lg:text-right">
-              Sigma Rules is a webapp that allows users to create new sigma
-              rules which can be read by everyone globally.
+              Now no more going back-n-forth in conducting meetings, Planit.io
+              makes it easy and elegant to schedule meetings.
             </p>
             <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
               <div className="github-btn">
                 <a
                   className="icon "
                   target="_blank"
-                  href="https://github.com/tarunfy/sigma-rules"
+                  href="https://github.com/tarunfy/Planit.io"
                 >
                   <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
                 </a>
@@ -288,12 +289,56 @@ const Projects = () => {
                 <a
                   className="icon"
                   target="_blank"
-                  href="https://sigma-rules.netlify.app/"
+                  href="https://planitio.vercel.app/"
                 >
                   <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Bloggy */}
+        <div className="container lg:space-x-2 flex flex-col-reverse lg:flex-row lg:justify-between lg:items-center items-start invisible">
+          <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3 ">
+            <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
+              <div className="content-line flex items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#420fe7]">
+                <div className="content-line-inner">Bloggy</div>
+              </div>
+            </h1>
+            <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm">
+              A constructive and inclusive social network for software
+              developers.
+            </p>
+            <div className="btn-row flex justify-start space-x-6 items-center">
+              <div className="github-btn">
+                <a
+                  className="icon "
+                  target="_blank"
+                  href="https://github.com/tarunfy/Bloggy"
+                >
+                  <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
+                </a>
+              </div>
+              <div className="liveDemo-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://bloggyy.vercel.app/"
+                >
+                  <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
+            <img
+              src={bloggy}
+              alt="project image"
+              className="absolute w-full object-cover h-full img"
+            />
+            <div className="img-container absolute top-0 left-0 bg-[#420fe7] w-full h-full"></div>
           </div>
         </div>
       </div>
