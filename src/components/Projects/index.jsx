@@ -1,10 +1,10 @@
 import { useEffect } from "react";
-import hirely from "../../assets/images/Hirely.svg";
-import easyStaff from "../../assets/images/EasyStaff.svg";
-import formify from "../../assets/images/Formify.svg";
-import bloggy from "../../assets/images/Bloggy.svg";
-import planitio from "../../assets/images/Planitio.svg";
-import learningCafe from "../../assets/images/LearningCafe.svg";
+import hirely from "../../assets/images/Hirely.png";
+import easyStaff from "../../assets/images/EasyStaff.png";
+import formify from "../../assets/images/Formify.png";
+import bloggy from "../../assets/images/Bloggy.png";
+import planitio from "../../assets/images/Planitio.png";
+import learningCafe from "../../assets/images/LearningCafe.png";
 import { BsGithub, BsArrowRight } from "react-icons/bs";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
