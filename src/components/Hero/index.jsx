@@ -28,6 +28,7 @@ const letters = [
   "&",
   "Interactive",
   "webapps",
+  "🚀",
 ];
 
 const title = ["Hello!", "I'm", "Tarun"];
@@ -98,10 +99,12 @@ const Hero = () => {
             <div className="w-full flex md:flex-row flex-col justify-between items-center ">
               <div>
                 <p className=" text-white/60 font-Glimer-Light xl:text-[1.3rem] 2xl:text-[1.5rem] lg:text-base md:text-sm text-xs xl:leading-8 2xl:leading-9 lg:leading-6 leading-5 mb-6 md:mb-0">
-                  I am a 19 year old who develops webapps and turn ideas into a
-                  functional and delightful experience. I am focusing on working
-                  on backend stuff and imporving my frontend skills - mainly
-                  building webapps & websites with clean UI.
+                  As a frontend developer, my expertise lies in creating
+                  seamless and intuitive user experiences. I specialize in using
+                  cutting-edge technologies to produce high-quality web
+                  applications. Specifically, I have vast knowledge of ReactJS
+                  and NodeJS, which allow me to build complex and dynamic
+                  applications with ease.
                 </p>
               </div>
 

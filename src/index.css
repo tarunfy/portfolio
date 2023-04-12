@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: "Glimer-Outlined";
   src: url(./assets/Gilmer-Font/Gilmer\ Outline.otf);
@@ -33,16 +32,13 @@
   src: url(./assets/Gilmer-Font/Gilmer\ Regular.otf);
 }
 
-
-
-@layer base{
-  
-
-  html,body{
+@layer base {
+  html,
+  body {
     background-color: #420fe7;
   }
 
-  .img{
+  .img {
     will-change: scale;
   }
 
@@ -50,60 +46,70 @@
     will-change: width;
   }
 
-  .container{
+  .container {
     will-change: visibility;
   }
 
+  .cursor {
+    pointer-events: none;
+  }
 
+  .cursor__ball {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
 
-.cursor {
-  pointer-events: none;      
-} 
-
-.cursor__ball {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+  .img-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #420fe7;
+  }
 }
 
-.img-container::after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  background: #420fe7;
-}
-
-}
-.css-ja5taz-MuiTooltip-tooltip{
+.MuiTooltip-tooltip,
+.MuiTooltip-tooltipPlacementRight,
+.css-1spb1s5 {
   background-color: #222 !important;
   color: white !important;
-border-radius: 50px !important;
-padding: 1rem !important;
-font-size: 0.8rem !important;
-font-family: 'Glimer-Regular', sans-serif !important;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-} 
-
-.MuiTooltip-popper[data-popper-placement*="right"] .css-ja5taz-MuiTooltip-tooltip{
-transform: translateY(-20px) !important;
+  border-radius: 50px !important;
+  padding: 1rem !important;
+  font-size: 0.8rem !important;
+  font-family: "Glimer-Regular", sans-serif !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-#tech-stack::before{
+/*.css-ja5taz-MuiTooltip-tooltip {
+  background-color: #222 !important;
+  color: white !important;
+  border-radius: 50px !important;
+  padding: 1rem !important;
+  font-size: 0.8rem !important;
+  font-family: "Glimer-Regular", sans-serif !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}*/
+
+.MuiTooltip-popper[data-popper-placement*="right"]
+  .css-ja5taz-MuiTooltip-tooltip {
+  transform: translateY(-20px) !important;
+}
+
+#tech-stack::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: radial-gradient(hsla(0,0%,100%,0),#4613e6 60%);
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0), #4613e6 60%);
 }
 
-#tech-stack::after{
+#tech-stack::after {
   z-index: -10;
   content: "";
   position: absolute;
@@ -111,33 +117,29 @@ transform: translateY(-20px) !important;
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: radial-gradient(hsla(0,0%,100%,0),#4613e6 96%);
+  background-image: radial-gradient(hsla(0, 0%, 100%, 0), #4613e6 96%);
 }
 
-
-#tech-stack{
+#tech-stack {
   background: url(./assets/images/lines.svg);
   background-position: right;
   background-size: cover;
   background-repeat: repeat-x;
 }
 
-
 @media screen and (min-width: 1280px) {
-  #tech-stack{
-  background: url(./assets/images/lines.svg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-}
-}
-
-
-#projects{
-  background: linear-gradient(0deg, rgba(70,19,230,1) 0%, #420FE7 90%);
+  #tech-stack {
+    background: url(./assets/images/lines.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+  }
 }
 
-#contact-section{
-  background: linear-gradient(0deg,  #420FE7 0%, rgba(70,19,230,1)  95%);
+#projects {
+  background: linear-gradient(0deg, rgba(70, 19, 230, 1) 0%, #420fe7 90%);
 }
 
+#contact-section {
+  background: linear-gradient(0deg, #420fe7 0%, rgba(70, 19, 230, 1) 95%);
+}
