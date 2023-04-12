@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profilePhoto from "../../assets/images/tarun.jpeg";
+import profilePhoto from "../../assets/images/tarun.png";
 import Tooltip from "@mui/material/Tooltip";
 import { Fade } from "@mui/material";
 import { motion } from "framer-motion";
