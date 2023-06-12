@@ -84,16 +84,6 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/*.css-ja5taz-MuiTooltip-tooltip {
-  background-color: #222 !important;
-  color: white !important;
-  border-radius: 50px !important;
-  padding: 1rem !important;
-  font-size: 0.8rem !important;
-  font-family: "Glimer-Regular", sans-serif !important;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}*/
-
 .MuiTooltip-popper[data-popper-placement*="right"]
   .css-ja5taz-MuiTooltip-tooltip {
   transform: translateY(-20px) !important;
